@@ -1,3 +1,31 @@
-@import './common';
-@import './header';
-// @import './example';
+// Змінні
+@import './utils/variables';
+@import './utils/breakpoints';
+
+// Нормалызацыя стилів
+@import './base/common';
+@import './base/normalize';
+
+// Компоненти
+@import './components/container';
+@import './components/hidden';
+@import './components/button';
+// @import './header';
+// @import './header';
+
+// Макети
+@import './layouts/header';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/costomer-reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
+@import './layouts/header-modal';
+@import './layouts/about-modal';
+@import './layouts/products-modal';
+@import './layouts/franchise-modal';
+@import './layouts/location-modal';
+// @import './header';
+// @import './header';
