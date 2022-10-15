@@ -1,0 +1,131 @@
+/*RESET*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* отсутствие отступов после картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* сброс настроек списка */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* сброс настроек ссылок */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.about {
+  background-color: #84a178;
+  padding-top: 60px;
+}
+.section {
+}
+
+.about__label {
+  display: block;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+
+  margin-bottom: 12px;
+}
+.about__title {
+  display: block;
+
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 32px;
+}
+.about__decor {
+  display: block;
+
+  position: relative;
+
+  width: 278px;
+  height: 278px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4px 16px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.about__photo {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  margin-bottom: 20px;
+}
+.about__item {
+}
+.about__descrip {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+
+  width: 220px;
+}
+.about__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
