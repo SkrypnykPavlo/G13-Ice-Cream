@@ -1,67 +1,32 @@
-/*RESET*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-/* отсутствие отступов после картинок */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-/* сброс настроек списка */
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* сброс настроек ссылок */
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .about {
-  background-color: #84a178;
+  background-color: $brand-main-color;
   padding-top: 60px;
-}
-.section {
 }
 
 .about__label {
   display: block;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-main;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: calc(22 / 18);
   text-align: center;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $text-light-color;
 
   margin-bottom: 12px;
 }
 .about__title {
   display: block;
 
-  font-family: "Seymour One", sans-serif;
+  font-family: $font-title;
   font-weight: 400;
   font-size: 30px;
-  line-height: 38px;
+  line-height: calc(38 / 30);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $text-light-color;
 
   width: 200px;
   margin-left: auto;
@@ -72,18 +37,12 @@ img {
 .about__decor {
   display: block;
 
-  position: relative;
-
   width: 278px;
   height: 278px;
 
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
-  box-shadow: 0px 4px 16px rgba(153, 114, 23, 0.25);
+  background: linear-gradient(0deg, $img-decoration, $img-decoration),
+    $back-round-decoration;
+  box-shadow: 0px 4px 16px $back-round-img-shadow;
   border-radius: 140px;
 
   margin-left: auto;
@@ -95,9 +54,6 @@ img {
 
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
 
   margin-left: auto;
   margin-right: auto;
@@ -111,16 +67,15 @@ img {
 
   margin-bottom: 20px;
 }
-.about__item {
-}
+
 .about__descrip {
-  font-family: "Montserrat";
+  font-family: $font-main;
   font-weight: 400;
   font-size: 12px;
-  line-height: 21px;
+  line-height: calc(21 / 12);
   text-align: center;
   letter-spacing: 0.04em;
-  color: #fcfcfc;
+  color: $text-light-color;
 
   width: 220px;
 }
