@@ -92,14 +92,19 @@
   }
 }
 
-// .about__group {
-//   @media screen and (min-width: $tablet) {
-//     position: absolute;
+.about__box {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 32px;
+  }
+}
 
-//     top: 221px;
-//     left: 400px;
-//   }
-// }
+.about__group {
+  @media screen and (min-width: $tablet) {
+    padding-top: 7px;
+    padding-bottom: 17px;
+  }
+}
 .about__list {
   display: flex;
   flex-direction: column;
@@ -144,6 +149,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  font-family: inherit;
+
+  min-width: 164px;
+  min-height: 42px;
+
+  background: $brand-second-color;
+  border-radius: 10px;
+  border: none;
 
   @media screen and (min-width: $tablet) {
     margin-left: 0;
