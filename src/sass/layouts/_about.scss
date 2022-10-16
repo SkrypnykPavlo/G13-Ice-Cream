@@ -92,12 +92,14 @@
   }
 }
 
-.about__group {
-  position: absolute;
+// .about__group {
+//   @media screen and (min-width: $tablet) {
+//     position: absolute;
 
-  top: 221px;
-  right: 0;
-}
+//     top: 221px;
+//     left: 400px;
+//   }
+// }
 .about__list {
   display: flex;
   flex-direction: column;
