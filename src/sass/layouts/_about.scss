@@ -92,6 +92,9 @@
     width: 500px;
     height: 500px;
 
+    margin-left: 0;
+    margin-right: 0;
+
     box-shadow: 0px 8px 30px $back-round-img-shadow;
     border-radius: 250px;
   }
@@ -128,8 +131,8 @@
     padding-bottom: 17px;
 
     @media screen and (min-width: $desctop) {
-       padding-top: 90px;
-        padding-bottom: 35px;
+      padding-top: 90px;
+      padding-bottom: 117px;
     }
   }
 }
@@ -171,8 +174,8 @@
   @media screen and (min-width: $desctop) {
     width: 463px;
 
-    font-size: 16px;
-    line-height: calc(28 / 16);
+    font-size: 14px;
+    line-height: calc(27 / 14);
   }
 }
 
