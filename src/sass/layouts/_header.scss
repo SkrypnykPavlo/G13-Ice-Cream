@@ -1,5 +1,7 @@
 .header-container {
   background-color: $brand-main-color;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header {
@@ -52,19 +54,19 @@
   }
 }
 
-.button {
-  width: 152px;
-  height: 42px;
-  border-radius: 10px;
+.menu-btn {
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 20px;
   border: none;
+  background-color: transparent;
 
-  font-family: $font-main;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 
-  color: $text-dark-color;
-
-  background-color: $brand-second-color;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 }
