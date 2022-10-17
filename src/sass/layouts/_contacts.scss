@@ -1,34 +1,34 @@
 .contacts {
+  background-color: $brand-main-color;
+
   @media screen and (max-width: 767px) {
     padding-bottom: 39px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     padding-bottom: 40px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     padding-bottom: 120px;
   }
 }
-.contacts__container {
-  background-color: #84a178;
-}
+
 .contacts__list {
   @media screen and (max-width: 767px) {
     position: relative;
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     transform: translateY(-285px);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     gap: 32px;
     margin-bottom: 64px;
     transform: translateY(-94px);
@@ -40,7 +40,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-color: #fcfcfc;
+  background-color: $text-light-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -63,13 +63,13 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     max-height: 528px;
     width: calc((100% - 16px * 2) / 3);
     padding: 40px 24px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     min-height: 538px;
     width: calc((100% - 32px * 2) / 3);
     padding: 40px;
@@ -89,14 +89,14 @@
   justify-content: center;
   min-height: 16px;
 
-  background-color: #f8d24e;
+  background-color: $brand-second-color;
   border-radius: 4px;
 
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.04em;
   line-height: 1.833;
-  color: #131313;
+  color: $text-dark-color;
 
   @media screen and (max-width: 767px) {
     font-size: 12px;
@@ -107,7 +107,7 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: 28px;
     margin-bottom: 32px;
     font-size: 16px;
@@ -115,7 +115,7 @@
     line-height: 1.875;
     padding: 0 13px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     padding: 0 15px;
   }
 }
@@ -123,7 +123,7 @@
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.04em;
-  color: #131313;
+  color: $text-dark-color;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 8px;
@@ -132,14 +132,14 @@
     line-height: 1.83;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-bottom: 12px;
 
     font-size: 14px;
     line-height: 1.85;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     font-size: 16px;
     line-height: 1.875;
 
@@ -152,7 +152,7 @@
   font-weight: 500;
   letter-spacing: 0em;
 
-  color: #131313;
+  color: $text-dark-color;
 
   @media screen and (max-width: 767px) {
     font-size: 12px;
@@ -160,12 +160,12 @@
     letter-spacing: 0em;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 14px;
     line-height: 1.85;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     font-size: 16px;
     line-height: 1.81;
   }
@@ -179,13 +179,13 @@
   font-weight: 500;
   letter-spacing: 0.04em;
 
-  color: #d6936d;
+  color: $text-address-color;
   &::after {
     content: ' ';
     position: absolute;
     left: 0;
 
-    border: 1px solid #e1e1e1;
+    border: 1px solid $border-color;
     width: 100%;
   }
 
@@ -198,7 +198,7 @@
       bottom: -24px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 14px;
     line-height: 1.85;
     margin-bottom: 64px;
@@ -207,7 +207,7 @@
       bottom: -32px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     font-size: 16px;
     line-height: 1.81;
     margin-bottom: 64px;
@@ -224,7 +224,7 @@
     content: ' ';
     position: absolute;
     left: 0;
-    border: 1px solid #e1e1e1;
+    border: 1px solid $border-color;
     width: 100%;
   }
 
@@ -236,7 +236,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 64px;
 
     &::after {
@@ -266,12 +266,12 @@
     line-height: 1.46;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 14px;
     line-height: 1.85;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     font-size: 16px;
     line-height: 1.87;
   }
@@ -282,11 +282,11 @@
       font-size: 12px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       font-size: 14px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desctop) {
       font-size: 16px;
       line-height: 1.875;
     }
@@ -294,17 +294,17 @@
 }
 
 .contact__button-set {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     gap: 16px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: -278px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     margin-top: -94px;
   }
 }
@@ -313,6 +313,9 @@
   text-align: center;
 
   @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+
     &:not(:last-child) {
       margin-bottom: 16px;
     }
