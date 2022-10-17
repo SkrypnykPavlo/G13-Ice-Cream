@@ -1,0 +1,36 @@
+.gallery {
+  @media screen and (max-width: 767px) {
+    background-size: cover;
+    background-image: url(../images/customer-revievs/background-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-mobile@2x.jpg);
+    }
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+    background-image: url(../images/customer-revievs/background-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-tablet@2x.jpg);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    background-size: cover;
+    background-image: url(../images/customer-revievs/background-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-desktop@2x.jpg);
+    }
+  }
+}

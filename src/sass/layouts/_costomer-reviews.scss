@@ -58,6 +58,7 @@ img {
 
   // Tablet screen
   @media screen and (min-width: 768px) {
+    background-size: cover;
     background-image: url(../images/customer-revievs/background-tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -69,6 +70,7 @@ img {
 
   // Desktop screen
   @media screen and (min-width: 1200px) {
+    background-size: cover;
     background-image: url(../images/customer-revievs/background-desktop.jpg);
 
     @media (min-device-pixel-ratio: 2),
