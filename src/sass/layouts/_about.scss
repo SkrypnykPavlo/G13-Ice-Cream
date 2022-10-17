@@ -132,7 +132,7 @@
 
     @media screen and (min-width: $desctop) {
       padding-top: 90px;
-      padding-bottom: 117px;
+      padding-bottom: 118px;
     }
   }
 }
@@ -186,16 +186,26 @@
 }
 
 .about__button {
+  position: relative;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
 
   font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: $text-dark-color;
+  background-color: $brand-second-color;
+
+  cursor: pointer;
+
+  // padding: 12 51 12 34;
 
   min-width: 164px;
   min-height: 42px;
 
-  background: $brand-second-color;
   border-radius: 10px;
   border: none;
 
@@ -204,4 +214,27 @@
   }
   @media screen and (min-width: $desctop) {
   }
+
+  // transition: background-color $transition, color $transition,
+  //   outline $transition;
+
+  // &:hover {
+  //   background-color: $focus-color;
+  // }
+  // &:focus {
+  //   background-color: $focus-color;
+  //   color: $text-light-color;
+  //   outline: $text-light-color;
+  // }
+  // &:disabled {
+  //   background-color: $disabled-color;
+  //   color: $text-dark-color;
+  // }
 }
+// .about__icon {
+//   position: absolute;
+//   top: 15px;
+//   left: 118px;
+
+//   fill: currentColor;
+// }
