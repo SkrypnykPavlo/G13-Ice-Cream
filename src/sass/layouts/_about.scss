@@ -201,7 +201,7 @@
 
   cursor: pointer;
 
-  padding: 12 51 12 34;
+  // padding: 12 51 12 34;
 
   min-width: 164px;
   min-height: 42px;
@@ -215,26 +215,26 @@
   @media screen and (min-width: $desctop) {
   }
 
-  transition: background-color $transition, color $transition,
-    outline $transition;
+  // transition: background-color $transition, color $transition,
+  //   outline $transition;
 
-  &:hover {
-    background-color: $focus-color;
-  }
-  &:focus {
-    background-color: $focus-color;
-    color: $text-light-color;
-    outline: $text-light-color;
-  }
-  &:disabled {
-    background-color: $disabled-color;
-    color: $text-dark-color;
-  }
+  // &:hover {
+  //   background-color: $focus-color;
+  // }
+  // &:focus {
+  //   background-color: $focus-color;
+  //   color: $text-light-color;
+  //   outline: $text-light-color;
+  // }
+  // &:disabled {
+  //   background-color: $disabled-color;
+  //   color: $text-dark-color;
+  // }
 }
-.about__icon {
-  position: absolute;
-  top: 15px;
-  left: 118px;
+// .about__icon {
+//   position: absolute;
+//   top: 15px;
+//   left: 118px;
 
-  fill: currentColor;
-}
+//   fill: currentColor;
+// }
