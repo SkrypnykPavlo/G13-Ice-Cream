@@ -18,12 +18,6 @@
   }
 }
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .video-modal__title {
   font-family: $font-title;
   padding-bottom: 20px;
