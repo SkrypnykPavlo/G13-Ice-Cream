@@ -13,7 +13,7 @@
 // }
 
 .btn {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   padding: 12px 34px;
 
   display: block;
@@ -33,6 +33,14 @@
   border-radius: 10px;
 
   outline: none;
+
+  fill: currentColor;
+  justify-content: space-between;
+
+  display: flex;
+
+  transition: color $transition, border $transition,
+    background-color $transition;
 }
 
 .btn--use {
@@ -54,10 +62,7 @@
   background-color: inherit;
 
   &:hover,
-  &:focus {
-    background-color: inherit;
-  }
-
+  &:focus,
   &:disabled {
     background-color: inherit;
   }
@@ -73,24 +78,24 @@
 }
 
 .btn--arrow {
-  display: flex;
-  justify-content: space-between;
   width: 196px;
 
-  &::after {
-    content: '';
-    display: inline-flex;
+  // Перед здачей удалю
 
-    background-image: url(../images/icons/black-arrow.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+  // &::after {
+  //   content: '';
+  //   display: inline-flex;
 
-    width: 12px;
-    height: 12px;
-  }
-  &:focus::after {
-    background-image: url(../images/icons/white-arrow.svg);
-  }
+  //   background-image: url(../images/icons/black-arrow.svg);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+
+  //   width: 12px;
+  //   height: 12px;
+  // }
+  // &:focus::after {
+  //   background-image: url(../images/icons/white-arrow.svg);
+  // }
 }
 
 .btn-Read-more {
