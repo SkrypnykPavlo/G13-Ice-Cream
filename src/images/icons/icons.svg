@@ -33,6 +33,12 @@
 <path d="M10.08 2.579c-.901.243-1.995 1.477-2.189 2.472-.131.677.077 1.296.64 1.899.181.195 2.741 2.301 5.685 4.68 2.947 2.381 5.357 4.347 5.357 4.371s-2.411 1.989-5.357 4.371c-2.944 2.379-5.504 4.485-5.685 4.68-.987 1.056-.888 2.277.285 3.517.696.733 1.296.995 2.032.88a3.19 3.19 0 0 0 1.245-.525c.147-.109 11.811-9.52 13.469-10.864.291-.237.664-.744.885-1.205.181-.379.192-.429.192-.933 0-.496-.013-.56-.173-.888a3.352 3.352 0 0 0-.507-.704c-.256-.267-12.933-10.555-13.867-11.251-.304-.227-.843-.461-1.192-.517-.395-.067-.52-.061-.821.019z"/>
 </symbol>
 
+<symbol id="menu-burger" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 10h20"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 16h20"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 22h20"></path>
+</symbol>
+
 </defs>
 </svg>
 
