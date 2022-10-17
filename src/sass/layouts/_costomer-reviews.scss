@@ -34,10 +34,42 @@ img {
 .review {
   padding-top: 186px;
   padding-bottom: 394px;
-  background-image: url(../images/customer-revievs/background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  // Mobile screen
+  @media screen and (max-width: 479px) {
+    background-image: url(../images/customer-revievs/background-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-mobile@2x.jpg);
+    }
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/customer-revievs/background-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-tablet@2x.jpg);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 796px) {
+    background-image: url(../images/customer-revievs/background-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-desktop@2x.jpg);
+    }
+  }
 
   &__frame {
     margin-right: auto;
