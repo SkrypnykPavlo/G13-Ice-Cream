@@ -1,0 +1,164 @@
+.products-modal {
+  width: 280px;
+
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.modal-products-container {
+  width: 240px;
+}
+
+.products-modal__title {
+  margin-bottom: 22px;
+
+  font-family: $font-title;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+
+  text-align: center;
+
+  color: $text-dark-color;
+}
+
+.products-modal-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 240px;
+}
+
+.modal-elipse {
+  position: relative;
+  bottom: -8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  width: 132px;
+  height: 131px;
+
+  border-radius: 50%;
+
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    $back-round-decoration;
+}
+
+.modal-elipse::before {
+  content: url(/src/images/by-now/modal-ingridients-1x-min.png);
+  position: absolute;
+  left: 1px;
+  bottom: 7px;
+  display: block;
+}
+
+.nutrients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 39px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+  }
+}
+
+.nutrients-list__item {
+  height: 90px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.nutrients-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.nutrients-list__number {
+  display: block;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 8px;
+
+  margin-bottom: 8px;
+  border-radius: 50%;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(28 / 12);
+  text-align: center;
+
+  background-color: #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 13px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+  }
+}
+.nutrients-list__span {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+}
+
+.nutrients-list__number--l {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nutrients-list__number--m {
+  padding-left: 11px;
+  padding-right: 10px;
+}
+.nutrients-list__number--s {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.icecrean-modal-ingridients {
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+
+  text-align: center;
+
+  color: #131313;
+}
+
+.ingridients-list {
+  margin-bottom: 48px;
+}
+
+.ingridients-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ingridients-list__item:not(:last-child) {
+  margin-bottom: 11px;
+}

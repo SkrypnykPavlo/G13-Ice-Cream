@@ -1,0 +1,99 @@
+<header class="header-container">
+  <div class="container header">
+    <nav class="header__nav">
+      <picture>
+        <!-- Desktop -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/logo/Logo-min.png    1x,
+            ./images/logo/Logo-x2-min.png 2x
+          "
+        />
+        <!-- Tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/logo/logo-tablet-min.png    1x,
+            ./images/logo/logo-tablet-x2-min.png 2x
+          "
+        />
+        <!-- Mobile -->
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ./images/logo/Logo-mobile-min.png    1x,
+            ./images/logo/Logo-mobile-x2-min.png 2x
+          "
+        />
+        <img
+          class="header__logo__img"
+          src="./images/logo/Logo-min.png"
+          alt="Ice Cream logo"
+        />
+      </picture>
+
+      <ul class="header__nav__list list">
+        <li class="header__nav__item">
+          <a
+            class="header__nav__link header__nav__link--focused link"
+            href=""
+            target="_self"
+            rel="noopener noreferrer"
+            >Home</a
+          >
+        </li>
+        <li class="header__nav__item">
+          <a
+            class="header__nav__link header__nav__link--focused link"
+            href=""
+            target="_self"
+            rel="noopener noreferrer"
+            >How its made?</a
+          >
+        </li>
+        <li class="header__nav__item">
+          <a
+            class="header__nav__link header__nav__link--focused link"
+            href=""
+            target="_self"
+            rel="noopener noreferrer"
+            >Our products</a
+          >
+        </li>
+        <li class="header__nav__item">
+          <a
+            class="header__nav__link header__nav__link--focused link"
+            href=""
+            target="_self"
+            rel="noopener noreferrer"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="menu-btn">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/header-hero/menu-1x.png 1x,
+            ./images/header-hero/menu-2x.png 2x
+          "
+        />
+        <img
+          class="menu_btn__img"
+          src="./images/header-hero/menu-1x.png"
+          alt="Menu icon"
+        />
+      </picture>
+    </button>
+
+    <button type="button" class="btn btn-Buy-now btn--use">
+      Buy now<svg width="12px" height="12px">
+        <use href="./images/icons/icons.svg#arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>

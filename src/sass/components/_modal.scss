@@ -24,6 +24,18 @@
   visibility: hidden;
 
   width: 100%;
+
+  background-color: $text-light-color;
+  border: 2px solid $brand-second-color;
+  border-radius: 10px;
+
+  transition: opacity $transition;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-btn-close {
