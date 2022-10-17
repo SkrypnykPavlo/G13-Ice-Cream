@@ -34,12 +34,10 @@ img {
 .review {
   padding-top: 186px;
   padding-bottom: 394px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   // Mobile screen
   @media screen and (max-width: 767px) {
+    background-size: cover;
     background-image: url(../images/customer-revievs/background-mobile.jpg);
 
     @media (min-device-pixel-ratio: 2),
