@@ -1,0 +1,223 @@
+.footer-container {
+  background-color: $brand-main-color;
+  padding-bottom: 62px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 11px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $border-color;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__txt {
+  font-family: $font-main;
+  text-transform: uppercase;
+  color: $text-light-color;
+
+  &__first {
+    width: 232px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 352px;
+      height: 57px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: calc(32 / 26);
+      letter-spacing: 0.04em;
+
+      margin-bottom: 9px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 504px;
+      height: 37px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: calc(37 / 30);
+      letter-spacing: 0.04em;
+
+      margin-bottom: 14px;
+    }
+  }
+
+  &__second {
+    width: 200px;
+    height: 76px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: calc(41 / 34);
+    letter-spacing: 0.06em;
+
+    margin-bottom: 42px;
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      height: 118px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: calc(59 / 48);
+      letter-spacing: 0.06em;
+
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 500px;
+      height: 71px;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: calc(71 / 58);
+      letter-spacing: 0.06em;
+
+      margin-bottom: 54px;
+    }
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 38px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+
+    margin-bottom: 60px;
+  }
+}
+
+.socials__list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.socials__icon {
+  fill: $brand-main-color;
+
+  transition: fill($transition);
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: $contacts-color;
+}
+
+.footer__contact {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.02em;
+
+  color: $text-dark-color;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 12px;
+    line-height: calc(26 / 12);
+  }
+}
+
+.footer__tel {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.02em;
+
+  color: $contacts-color;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 12px;
+    line-height: calc(26 / 12);
+  }
+}
+
+.footer__rights {
+  display: block;
+  width: 160px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $rights-color;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 298px;
+    height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 255px;
+    height: 22px;
+    margin-top: 12px;
+
+    font-family: $font-main;
+    font-style: normal;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    text-align: center;
+
+    letter-spacing: 0.02em;
+  }
+}
