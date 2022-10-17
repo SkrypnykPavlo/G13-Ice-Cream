@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
 }
 
 .swiper-pagination-bullet {
@@ -34,6 +33,16 @@ img {
 .review {
   padding-top: 186px;
   padding-bottom: 394px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 223px;
+    padding-bottom: 383px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 447px;
+    padding-bottom: 204px;
+  }
 
   // Mobile screen
   @media screen and (max-width: 767px) {
@@ -69,6 +78,19 @@ img {
     }
   }
 
+  &__box {
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+      width: 705px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      width: 968px;
+    }
+  }
+
   &__frame {
     margin-right: auto;
     margin-left: auto;
@@ -88,10 +110,20 @@ img {
     line-height: 2.55;
 
     text-align: center;
-
     color: $text-light-color;
+
     background-color: $brand-main-color;
     border-radius: 10px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 29px 80px;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 39px 74px;
+      font-size: 16px;
+    }
   }
 
   &__author {
@@ -99,9 +131,13 @@ img {
     font-family: $font-main;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.86;
 
     color: $text-dark-color;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
   }
 }
