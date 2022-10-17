@@ -223,24 +223,6 @@ input:checked+label {
     }
 }
 
-.register-form-button__buy {
-    display: block;
-    width: 114px;
-    min-height: 42.43px;
-    padding: 12px 34px;
-    margin: 0 auto;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    background-color: $brand-second-color;
-    border: 1px solid transparent;
-    border-radius: 10px;
-
-    outline: none;
-    cursor: pointer;
-
-    @media screen and (min-width:768px) {
-        width: 121px;
-        font-size: 14px;
-        line-height: calc(17 / 14);
-    }
+.btn--modal{
+margin-bottom: 0;
 }
