@@ -1,0 +1,77 @@
+.swiper {
+  padding-bottom: 51px;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  gap: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #84a178;
+}
+
+img {
+  // display: block;
+  width: 100%;
+  // height: 100%;
+}
+
+.review {
+  padding-top: 186px;
+  padding-bottom: 394px;
+  background-image: url(../images/customer-revievs/background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__frame {
+    margin-right: auto;
+    margin-left: auto;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 32px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    padding: 34px 39px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+
+    text-align: center;
+
+    color: #fcfcfc;
+    background-color: #84a178;
+    border-radius: 10px;
+  }
+
+  &__author {
+    margin-top: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+
+    color: #131313;
+  }
+}
