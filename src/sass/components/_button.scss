@@ -106,7 +106,9 @@
 
   outline: transparent;
 
-  
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .btn-Buy-now {
