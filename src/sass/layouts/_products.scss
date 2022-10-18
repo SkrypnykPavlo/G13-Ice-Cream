@@ -199,14 +199,14 @@
       position: absolute;
       height: 200px;
       width: 200px;
-      top: -100px;
+      top: -110px;
       border-radius: 50%;
       box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 
       @media screen and (min-width: 1200px) {
         height: 300px;
         width: 300px;
-        top: -150px;
+        top: -163px;
       }
     }
     &::after {
@@ -248,13 +248,13 @@
       position: absolute;
       height: 200px;
       width: 200px;
-      top: -110px;
+      top: -120px;
       border-radius: 50%;
 
       @media screen and (min-width: 1200px) {
         height: 300px;
         width: 300px;
-        top: -167px;
+        top: -180px;
         background-size: cover;
       }
     }
@@ -274,14 +274,14 @@
       position: absolute;
       height: 200px;
       width: 200px;
-      top: -100px;
+      top: -110px;
       border-radius: 50%;
       box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 
       @media screen and (min-width: 1200px) {
         height: 300px;
         width: 300px;
-        top: -150px;
+        top: -163px;
       }
     }
     &::after {
@@ -323,13 +323,13 @@
       position: absolute;
       height: 200px;
       width: 200px;
-      top: -110px;
+      top: -120px;
       border-radius: 50%;
 
       @media screen and (min-width: 1200px) {
         height: 300px;
         width: 300px;
-        top: -167px;
+        top: -180px;
         background-size: cover;
       }
     }
@@ -348,14 +348,14 @@
       position: absolute;
       height: 200px;
       width: 200px;
-      top: -100px;
+      top: -110px;
       border-radius: 50%;
       box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 
       @media screen and (min-width: 1200px) {
         height: 300px;
         width: 300px;
-        top: -150px;
+        top: -163px;
       }
     }
     &::after {
@@ -397,13 +397,13 @@
       position: absolute;
       height: 200px;
       width: 200px;
-      top: -110px;
+      top: -120px;
       border-radius: 50%;
 
       @media screen and (min-width: 1200px) {
         height: 300px;
         width: 300px;
-        top: -167px;
+        top: -180px;
         background-size: cover;
       }
     }
@@ -411,8 +411,22 @@
 }
 
 .product__button {
-  // border: none;
-  background-color: transparent;
+  border: none;
+  background: url(../images/products/arrow1.png);
+  background-size: cover;
+  width: 40px;
+  height: 15px;
   padding: 0;
   cursor: pointer;
+
+  &:hover {
+    background: url(../images/products/arrow2.png);
+    width: 51px;
+  }
+
+  &:focus {
+    background: url(../images/products/arrow3.png);
+    width: 51px;
+    height: 24px;
+  }
 }
