@@ -150,10 +150,15 @@
 }
 
 .socials__item {
+  scale: 1;
   transition: scale($transition);
 }
 
-.socials__item:hover,
+.socials__item:hover {
+  scale: 0.9;
+}
+
+.socials__item:active,
 .socials__item:focus {
   scale: 1.25;
 }
