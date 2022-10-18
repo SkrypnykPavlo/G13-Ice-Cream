@@ -1,6 +1,4 @@
-<!-- Макет кнопки для запуска модального вікна -->
-
-<button class="js-open-modal" data-modal="1" type="button" width="150px" height="50px">Пробная кнопка для запуска модального вікна Buy now макет</button>
+<button class="js-open-modal" data-modal="1" type="button">Пробная кнопка для запуска модального вікна Buy now макет</button>
 
     <div class="modal modal__buy" data-modal="1">
             <button class="modal-btn-close js-modal-close" type="button">
@@ -18,59 +16,41 @@
 <form class="modal-form__byu" name="register-form" autocomplete="on">
             
     <ul class="modal-list__buy">
-                <li class="modal-item__buy">
-                    <div class="modal-group__buy">
-                    <img class="modal-img__buy" 
-                        srcset="./images/by-now/modal-products01-1x-min.png 1x, ./images/by-now/modal-products01-2x-min.png 2x"
-                        src="./images/by-now/modal-products01-1x-min.png" alt="ice-cream" width="132" height="132" />
-                    <div class="modal-elips__buy cream"></div>
-
-                        <input class="label-check__buy" type="checkbox" id="icecream" >
-                        <label class="modal-label__buy cream" for="icecream">
-                        <strong class="modal-name__buy">ice cream</strong>
-                        </label>
-
-                    </div>
-                </li>
-
-                <li class="modal-item__buy">
-                    <div class="modal-group__buy">
-                        <img class="modal-img__buy"
-                            srcset="./images/by-now/modal-products02-1x-min.png 1x, ./images/by-now/modal-products02-2x-min.png 2x"
-                            src="./images/by-now/modal-products02-1x-min.png" alt="ice-coffee" width="132" height="132" />
-                        <div class="modal-elips__buy coffee"></div>
-
-                        <input class="label-check__buy" type="checkbox" id="icecoffee" >
-                        <label class="modal-label__buy coffee" for="icecoffee">
-                            <strong class="modal-name__buy">ice coffee</strong>
-                        </label>
-
-                    </div>
-                </li>
-
-                <li class="modal-item__buy">
-                    <div class="modal-group__buy">
-                    <img class="modal-img__buy"
-                        srcset="./images/by-now/modal-products03-1x-min.png 1x, ./images/by-now/modal-products03-2x-min.png 2x"
-                        src="./images/by-now/modal-products03-1x-min.png" alt="milkshake" width="132" height="132" />
-                    <div class="modal-elips__buy milkshake"></div>
-
-                        <input class="label-check__buy" type="checkbox" id="milkshake" >
-                        <label class="modal-label__buy milkshake " for="milkshake">
-                            <strong class="modal-name__buy">milkshake</strong>
-                        </label>
-
-                    </div>
-                </li>
-            </ul>
+    <li class="modal-item">
+        <input class="label-check__buy" type="checkbox" id="icecream">
+        <label class="modal-item__buy elipse_green" for="icecream">
+        <strong class="modal-name__buy">ice cream</strong>
+        </label>
+    </li>
+    <li class="modal-item">
+        <input class="label-check__buy" type="checkbox" id="icecoffee">
+        <label class="modal-item__buy elipse_yelow" for="icecoffee">
+        <strong class="modal-name__buy">ice coffee</strong>
+        </label>
+    </li>
+    <li class="modal-item">
+        <input class="label-check__buy" type="checkbox" id="milkshake">
+        <label class="modal-item__buy elipse_mocco " for="milkshake">
+            <strong class="modal-name__buy">milkshake</strong>
+        </label>
+    </li>         
+    </ul>
+            <div class="register-form-group__buy" role="group">
+            <input class="register-form-input__buy" type="text" id="username" placeholder=" " 
+            pattern="^[a-zA-Z\s]+$" >
+            <label for="username" class="label__form-field">Name</label>
+            </div>
 
             <div class="register-form-group__buy" role="group">
-            <input class="register-form-input__buy" type="text" name="username" placeholder="Name" 
-                required pattern="[A-z]{1,15}" minlength="3" >
-                <input class="register-form-input__buy" type="tel" name="username" placeholder="Phone" 
-                required minlength="13" maxlength="13" >
+                <input class="register-form-input__buy" type="tel" id="phone" 
+                placeholder=" "  pattern="^[0-9]+$" maxlength="13">
+                <label for="phone" class="label__form-field">Phone</label>
+            </div>
+            
+            <div class="register-form-group__buy comments" role="group">
                 <textarea class="register-form-message__buy" name="comment" rows="3" placeholder="Comment"></textarea>
             </div>
+           
             <button class="btn btn--modal" type="submit">Submit</button>
         </form>
     </div>
