@@ -1,0 +1,143 @@
+.swiper {
+  padding-bottom: 51px;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: $back-round-decoration;
+  gap: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $brand-main-color;
+}
+
+img {
+  width: 100%;
+}
+
+.review {
+  padding-top: 80px;
+  padding-bottom: 394px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 383px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 126px;
+    padding-bottom: 204px;
+  }
+
+  // Mobile screen
+  @media screen and (max-width: 767px) {
+    background-size: cover;
+    background-image: url(../images/customer-revievs/background-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-mobile@2x.jpg);
+    }
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+    background-image: url(../images/customer-revievs/background-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-tablet@2x.jpg);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    background-size: cover;
+    background-image: url(../images/customer-revievs/background-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-revievs/background-desktop@2x.jpg);
+    }
+  }
+
+  &__box {
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+      width: 705px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      width: 968px;
+    }
+  }
+
+  &__frame {
+    margin-right: auto;
+    margin-left: auto;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 32px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    padding: 34px 39px;
+    margin-bottom: 30px;
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+
+    text-align: center;
+    color: $text-light-color;
+
+    background-color: $brand-main-color;
+    border-radius: 10px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 29px 80px;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 39px 74px;
+      font-size: 16px;
+    }
+  }
+
+  &__author {
+    margin-top: 0;
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+
+    color: $text-dark-color;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+}

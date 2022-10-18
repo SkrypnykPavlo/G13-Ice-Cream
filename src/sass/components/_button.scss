@@ -100,6 +100,15 @@
 
 .btn-Read-more {
   width: 164px;
+  line-height: calc(18 / 14);
+
+  margin: 0 auto;
+
+  outline: transparent;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .btn-Buy-now {
