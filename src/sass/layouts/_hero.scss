@@ -1,0 +1,399 @@
+
+// === hero-mixins === //
+@mixin font($fs: 16px, $fw: 400, $lh: 28px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: calc($lh / $fs);
+}
+
+@mixin padding-button($pt: 12px, $pb: 12px, $pl: 33px, $pr: 33px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
+@mixin font-line($size, $height) {
+  font-size: $size;
+  line-height: calc($height/$size);
+}
+
+// ========== //
+
+.hero {
+  position: relative;
+  padding-top: 60px;
+
+  background-color: $brand-main-color;
+  color: $text-light-color;
+
+  height: 452px;
+  overflow-y: hidden;
+}
+
+.hero__header {
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+
+  @include font-line(26px, 33px);
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero__list {
+  display: flex;
+  gap: 18px;
+}
+
+.hero__list-item--bordered {
+  width: 62px;
+  height: 24px;
+
+  font-weight: 600;
+  font-size: 8px;
+  text-align: center;
+}
+
+.hero__link {
+  outline: none;
+}
+
+.hero__link--bordered {
+  display: inline-block;
+  width: 100%;
+
+  border: 2px solid $brand-second-color;
+  border-radius: 8px;
+
+  color: $text-dark-color;
+  text-decoration: none;
+
+  line-height: 20px;
+  vertical-align: middle;
+
+  &:focus,
+  &:hover {
+    border-color: $focus-color;
+  }
+  &:focus {
+    color: $text-light-color;
+  }
+  &:disabled {
+    border-color: $disabled-color;
+  }
+}
+
+.hero__list-item--unbordered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__link--unbordered {
+  @include font-line(8px, 10px);
+
+  color: $brand-second-color;
+
+  &:hover {
+    color: $focus-color;
+  }
+  &:focus {
+    color: $text-light-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
+}
+
+// === large-ice-cream-container === //
+
+.hero__major-box {
+  position: absolute;
+  bottom: 0px;
+  left: 27%;
+}
+
+.hero__smile {
+  position: absolute;
+
+  &--orange {
+    width: 68.95px;
+    height: 62.4px;
+
+    top: 47.11px;
+    left: 25.29px;
+
+    @media screen and (min-width: 768px) {
+      width: 109.95px;
+      left: 35px;
+      height: 106px;
+      top: 70.11px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 175.95px;
+      top: 127.11px;
+      height: 180px;
+      left: 78.29px;
+    }
+  }
+
+  &--green {
+    height: 76.18px;
+    width: 77.57px;
+
+    top: 3px;
+    right: 6px;
+
+    @media screen and (min-width: 768px) {
+      width: 139.57px;
+      top: 1px;
+      height: 138.18px;
+      right: 11px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 219.95px;
+      height: 214px;
+      right: 22px;
+      top: 15px;
+    }
+  }
+
+  &--pink {
+    width: 77.55px;
+    height: 76.22px;
+
+    top: 75px;
+    right: -4px;
+
+    @media screen and (min-width: 768px) {
+      width: 138.55px;
+      height: 141.22px;
+      top: 110px;
+      right: -2px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 219.95px;
+      top: 209px;
+      height: 214px;
+      right: -2px;
+    }
+  }
+}
+
+// === hero-mb-only === //
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/header-hero/dottes-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/header-hero/dottes-mobile2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+  }
+
+  .hero__store,
+  .hero__minor-box {
+    display: none;
+  }
+
+  .hero__header {
+    max-width: 247px;
+  }
+}
+
+// hero-tb //
+@media screen and (min-width: 768px) {
+  .hero {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    background-image: url(../images/header-hero/dottes-tablet.png);
+    height: 350px;
+    padding-top: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/header-hero/dottes-tablet2x.png);
+    }
+  }
+
+  .hero__header {
+    margin-bottom: 20px;
+
+    width: 181px;
+    height: 74px;
+
+    @include font-line(18px, 23px);
+  }
+
+  .hero__list {
+    margin-bottom: 28px;
+  }
+
+  .hero__minor-box {
+    display: flex;
+
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .hero__text-box {
+    padding-top: 25px;
+  }
+
+  .hero__minor-picture {
+    margin-right: 33px;
+  }
+
+  .hero__arrow-link {
+    &:hover {
+      .hero__arrow-icon {
+        width: 50px;
+      }
+    }
+    &:focus {
+      .hero__arrow-icon {
+        stroke: 3px;
+      }
+    }
+  }
+
+  .hero__arrow-icon {
+    width: 40px;
+    height: 15px;
+
+    fill: $text-light-color;
+  }
+
+  .hero__text {
+    width: 151px;
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+
+    color: $text-light-color;
+  }
+
+  .hero__store-count {
+    border-bottom: 4px;
+
+    font-weight: 900;
+    @include font-line(28px, 34px);
+
+    color: $text-dark-color;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .hero__store-type {
+    @include font-line(8px, 10px);
+    text-align: right;
+  }
+
+  .hero__major-box {
+    left: 53%;
+  }
+}
+
+// === hero-dt === //
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/header-hero/dottes-desktop.png);
+    height: 591px;
+
+    background-size: 1200px;
+    background-position: bottom center;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/header-hero/dottes-desktop2x.png);
+    }
+  }
+
+  .hero__header {
+    margin-bottom: 28px;
+
+    width: 367px;
+    height: 144px;
+
+    @include font-line(38px, 47.76px);
+  }
+
+  .hero__list {
+    margin-bottom: 42px;
+    gap: 34px;
+  }
+
+  .hero__list-item--bordered {
+    width: 134px;
+    height: 42px;
+  }
+
+  .hero__link--bordered {
+    line-height: 38px;
+
+    font-size: 14px;
+  }
+
+  .hero__link--unbordered {
+    font-weight: 600;
+    @include font-line(14px, 17px);
+  }
+
+  .hero__minor-picture {
+    margin-right: 14px;
+  }
+
+  .hero__text {
+    width: 200px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
+  }
+
+  .hero__text-box {
+    padding-top: 70px;
+  }
+
+  .hero__store-count {
+    @include font-line(46px, 56px);
+
+    color: $text-dark-color;
+  }
+
+  .hero__store-type {
+    @include font-line(14px, 17px);
+  }
+}
