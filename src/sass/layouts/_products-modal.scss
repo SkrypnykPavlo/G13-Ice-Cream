@@ -6,15 +6,15 @@
   padding-left: 20px;
   padding-bottom: 32px;
 
+  max-height: 100%;
+  overflow-y: auto;
+
   @media screen and (min-width: $tablet) {
+    width: 568px;
     padding-top: 32px;
     padding-right: 40px;
     padding-left: 40px;
   }
-}
-
-.modal-products-container {
-  width: 240px;
 }
 
 .products-modal__title {
@@ -27,12 +27,6 @@
   text-align: center;
 
   color: $text-dark-color;
-}
-
-.products-modal-container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 240px;
 }
 
 .modal-elipse {
@@ -53,14 +47,14 @@
       rgba(156, 190, 143, 0.7)
     ),
     $back-round-decoration;
-}
 
-.modal-elipse::before {
-  content: url(/src/images/by-now/modal-ingridients-1x-min.png);
-  position: absolute;
-  left: 1px;
-  bottom: 7px;
-  display: block;
+  &::before {
+    content: url(/src/images/by-now/modal-ingridients-1x-min.png);
+    position: absolute;
+    left: 1px;
+    bottom: 7px;
+    display: block;
+  }
 }
 
 .nutrients-list {
@@ -73,20 +67,29 @@
   @media screen and (min-width: $tablet) {
     gap: 20px;
   }
-}
 
-.nutrients-list__item {
-  height: 90px;
-  border: 2px solid #9cbe8f;
-  border-radius: 40px;
+  &__item {
+    height: 72px;
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+
+    @media screen and (min-width: $tablet) {
+      height: 90px;
+    }
+  }
 }
 
 .nutrients-list-wrap {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 4px;
+  padding-left: 4px;
+
+  @media screen and (min-width: $tablet) {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
 }
 
 .nutrients-list__number {
@@ -96,11 +99,10 @@
   padding-left: 12px;
   padding-bottom: 8px;
 
-  margin-bottom: 8px;
   border-radius: 50%;
 
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: calc(28 / 12);
   text-align: center;
 
@@ -108,57 +110,211 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
   @media screen and (min-width: $tablet) {
-    padding-top: 13px;
-    padding-right: 18px;
-    padding-left: 18px;
+    font-size: 12px;
+    padding-top: 11px;
+    padding-right: 14px;
+    padding-left: 14px;
     padding-bottom: 12px;
   }
+
+  &--l {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 11px;
+      padding-right: 12px;
+      padding-left: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &--m {
+    padding-left: 11px;
+    padding-right: 10px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 12px;
+      padding-right: 14px;
+      padding-left: 13px;
+      padding-bottom: 13px;
+    }
+  }
+
+  &--s {
+    padding-left: 6px;
+    padding-right: 6px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 12px;
+      padding-right: 9px;
+      padding-left: 9px;
+      padding-bottom: 13px;
+    }
+  }
 }
+
 .nutrients-list__span {
   display: block;
   text-align: center;
   font-size: 10px;
   line-height: calc(12 / 10);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+  }
 }
 
-.nutrients-list__number--l {
-  padding-left: 15px;
-  padding-right: 15px;
+.span--second {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
-.nutrients-list__number--m {
-  padding-left: 11px;
-  padding-right: 10px;
-}
-.nutrients-list__number--s {
-  padding-left: 6px;
-  padding-right: 6px;
+.span--first {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
-.icecrean-modal-ingridients {
-  padding-bottom: 11px;
+.ingridients-title {
   margin-bottom: 11px;
 
-  border-bottom: 1px solid #d9d9d9;
   font-weight: 500;
   font-size: 20px;
   line-height: calc(28 / 20);
 
   text-align: center;
 
-  color: #131313;
+  @media screen and (min-width: $tablet) {
+    border-bottom: none;
+  }
 }
 
 .ingridients-list {
   margin-bottom: 48px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    letter-spacing: 0.04em;
+  }
 }
 
-.ingridients-list__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.ingridients-list::before {
+  content: '';
+  display: block;
+  margin-bottom: 12px;
+  width: 240px;
+  height: 1px;
+  background: #d9d9d9;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
-.ingridients-list__item:not(:last-child) {
+// form styles
+.modal-form {
   margin-bottom: 11px;
+}
+
+.modal-form__label:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+
+.modal-form__label:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.modal-form-group::after {
+  content: '';
+  display: block;
+  margin-bottom: 19px;
+  width: 240px;
+  height: 3px;
+  background: #d9d9d9;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.modal-form__input {
+  padding-left: 11px;
+  padding-right: 11px;
+
+  width: 100%;
+  height: 42px;
+
+  outline: transparent;
+
+  border: 1px solid $brand-main-color;
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+  }
+}
+
+.modal-form__input::placeholder {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: $text-dark-color;
+}
+
+.modal-form__input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.modal-form__comment {
+  resize: none;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  width: 100%;
+
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: $text-dark-color;
+
+  outline: transparent;
+  border: 1px solid $brand-main-color;
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+  }
+}
+
+.modal-form__comment::placeholder {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: $text-dark-color;
 }
