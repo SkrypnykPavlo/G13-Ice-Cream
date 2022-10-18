@@ -28,18 +28,34 @@ img {
   width: 100%;
 }
 
+.gallery {
+  margin-bottom: 80px;
+
+  // Tablet screen
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  // Desktop screen
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 127px;
+  }
+}
+
 .review {
-  padding-top: 80px;
+  margin-bottom: 80px;
   padding-bottom: 394px;
 
+  // Tablet screen
   @media screen and (min-width: $tablet) {
-    padding-top: 60px;
+    margin-bottom: 60px;
     padding-bottom: 383px;
   }
 
+  // Desktop screen
   @media screen and (min-width: $desctop) {
-    padding-top: 126px;
     padding-bottom: 204px;
+    margin-bottom: 127px;
   }
 
   // Mobile screen
