@@ -62,16 +62,9 @@
     margin-bottom: 82px;
   }
 }
-.about__box {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 32px;
-  }
-  @media screen and (min-width: $desctop) {
-    gap: 100px;
-  }
-}
 .about__decor {
+  display: block;
+
   position: relative;
 
   width: 278px;
@@ -93,7 +86,7 @@
     box-shadow: 0px 5px 20px $back-round-img-shadow;
     border-radius: 165px;
 
-     margin-bottom: 27px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: $desctop) {
     width: 500px;
@@ -104,12 +97,11 @@
 
     box-shadow: 0px 8px 30px $back-round-img-shadow;
     border-radius: 250px;
-
-    margin-bottom: 39px;
   }
 }
 .about__photo {
   position: absolute;
+
   top: 22px;
 
   margin-left: auto;
@@ -123,17 +115,24 @@
   }
 }
 
-.about__group {
+.about__box {
   @media screen and (min-width: $tablet) {
     display: flex;
-    // padding-top: 7px;
-    // padding-bottom: 17px;
-    align-items: center;
-    // margin-bottom: 27px;
+    gap: 32px;
+  }
+  @media screen and (min-width: $desctop) {
+    gap: 100px;
+  }
+}
+
+.about__group {
+  @media screen and (min-width: $tablet) {
+    padding-top: 7px;
+    padding-bottom: 17px;
 
     @media screen and (min-width: $desctop) {
-      // padding-top: 90px;
-      // padding-bottom: 118px;
+      padding-top: 90px;
+      padding-bottom: 117px;
     }
   }
 }
@@ -202,7 +201,7 @@
 
   cursor: pointer;
 
-  // padding: 12 51 12 34;
+  padding: 12 51 12 34;
 
   min-width: 164px;
   min-height: 42px;
@@ -216,26 +215,26 @@
   @media screen and (min-width: $desctop) {
   }
 
-  // transition: background-color $transition, color $transition,
-  //   outline $transition;
+  transition: background-color $transition, color $transition,
+    outline $transition;
 
-  // &:hover {
-  //   background-color: $focus-color;
-  // }
-  // &:focus {
-  //   background-color: $focus-color;
-  //   color: $text-light-color;
-  //   outline: $text-light-color;
-  // }
-  // &:disabled {
-  //   background-color: $disabled-color;
-  //   color: $text-dark-color;
-  // }
+  &:hover {
+    background-color: $focus-color;
+  }
+  &:focus {
+    background-color: $focus-color;
+    color: $text-light-color;
+    outline: $text-light-color;
+  }
+  &:disabled {
+    background-color: $disabled-color;
+    color: $text-dark-color;
+  }
 }
-// .about__icon {
-//   position: absolute;
-//   top: 15px;
-//   left: 118px;
+.about__icon {
+  position: absolute;
+  top: 15px;
+  left: 118px;
 
-//   fill: currentColor;
-// }
+  fill: currentColor;
+}
