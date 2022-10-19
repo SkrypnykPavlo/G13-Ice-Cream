@@ -274,34 +274,68 @@
     margin-right: 33px;
   }
 
-  .hero__arrow-link {
-    display: block;
-    width: 40px;
-    height: 14px;
+  // .hero__arrow-link {
+  //   // display: block;
+  //   width: 40px;
+  //   height: 14px;
 
-    &:hover,
-    &:focus {
-      width: 50px;
-      height: 22px;
-      .hero__arrow-icon {
-        width: 50px;
-        stroke-width: 3px;
-        stroke: $text-light-color;
+  //   &:hover,
+  //   &:focus {
+  //     width: 50px;
+  //     height: 22px;
+  //     .hero__arrow-icon {
+  //       width: 50px;
+  //       stroke-width: 3px;
+  //       stroke: $text-light-color;
+  //     }
+  //   }
+  //   &:focus {
+  //     .hero__arrow-icon {
+  //       stroke-width: 3px;
+  //       stroke: $text-light-color;
+  //     }
+  //   }
+  // }
+
+  // .hero__arrow-icon {
+  //   width: 100px;
+  //   height: 15px;
+
+  //   fill: $text-light-color;
+  // }
+
+  .hero__arrow-link {
+    position: relative;
+    width: 50px;
+    height: 25px;
+
+    &:hover {
+      .hero__arrow-default {
+        opacity: 0;
+      }
+      .hero__Arrow-hover {
+        opacity: 1;
       }
     }
     &:focus {
-      .hero__arrow-icon {
-        stroke-width: 3px;
-        stroke: $text-light-color;
+      .hero__arrow-default {
+        opacity: 0;
+      }
+      .hero__Arrow-focus {
+        opacity: 1;
       }
     }
   }
-
-  .hero__arrow-icon {
-    width: 100px;
-    height: 15px;
-
-    fill: $text-light-color;
+  .hero__arrow-default {
+    position: absolute;
+  }
+  .hero__Arrow-hover {
+    position: absolute;
+    opacity: 0;
+  }
+  .hero__Arrow-focus {
+    position: absolute;
+    opacity: 0;
   }
 
   .hero__text {
