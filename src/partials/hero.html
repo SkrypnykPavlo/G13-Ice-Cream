@@ -1,104 +1,85 @@
 <section class="hero" id="home">
-		<div class="container">
-			<div>
-				<h1 class="hero__header">ice cream made with passion</h1>
+  <div class="container">
+    <div>
+      <h1 class="hero__header">ice cream made with passion</h1>
 
-				<ul class="hero__list">
-					<li class="hero__list-item hero__list-item--bordered">
-						<a class="hero__link hero__link--bordered" href="#product">Products</a>
-					</li>
-					<li class="hero__list-item hero__list-item--unbordered">
-						<a class="hero__link hero__link--unbordered" href="#about__label">How it’s made?</a>
-					</li>
-				</ul>
+      <ul class="hero__list">
+        <li class="hero__list-item hero__list-item--bordered">
+          <a class="hero__link hero__link--bordered" href="#product">Products</a>
+        </li>
+        <li class="hero__list-item hero__list-item--unbordered">
+          <a class="hero__link hero__link--unbordered" href="#about__label">How it’s made?</a>
+        </li>
+      </ul>
 
-				<div class="hero__minor-box">
-					<picture class="hero__minor-picture">
-						<source
-							srcset="./images/header-hero/icecreams-desktop.png 225w, ./images/header-hero/icecreams-desktop2x.png 450w"
+      <div class="hero__minor-box">
+        <picture class="hero__minor-picture">
+          <source srcset="
+              ./images/header-hero/icecreams-desktop.png   225w,
+              ./images/header-hero/icecreams-desktop2x.png 450w
+            " media="(min-width: 1200px)" sizes="225px" type="image/png" />
 
-							media="(min-width: 1200px)"
-							sizes="225px"
-							type="image/png"
-						>
-          
+          <source srcset="
+              ./images/header-hero/icecreams-tablet.png   152w,
+              ./images/header-hero/icecreams-tablet2x.png 304w
+            " media="(min-width: 768px)" sizes="152px" type="image/png" />
 
-						<source
-							srcset="./images/header-hero/icecreams-tablet.png 152w, ./images/header-hero/icecreams-tablet2x.png 304w"
-							media="(min-width: 768px)"
-							sizes="152px"
-							type="image/png"
-						>
-       
+          <img src="./images/header-hero/icecreams-desktop.png" alt="ice-creams" />
+        </picture>
+
+        <div class="hero__text-box">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
 
 
-						<img src="./images/header-hero/icecreams-desktop.png" alt="ice-creams">
-					</picture>
-					<div class="hero__text-box">
-						<p class="hero__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						</p>
-						<a class="hero__arrow-link" href="#about">
-							<svg class="hero__arrow-icon">
-								<use href="./images/icons/icons.svg#arrow-icon "></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
+          <a class="hero__arrow-link" href="#about__label">
+            <svg class="hero__arrow-icon">
+              <use href="./images/icons/icons.svg#arrow-icon "></use>
+          </a>
+        </div>
+      </div>
+    </div>
 
-			<div class="hero__store">
-				<p class="hero__store-count">16</p>
-				<p class="hero__store-type">cafes</p>
-				<p class="hero__store-count">23</p>
-				<p class="hero__store-type">food trucks</p>
-			</div>
+    <div class="hero__store">
+      <p class="hero__store-count">16</p>
+      <p class="hero__store-type">cafes</p>
+      <p class="hero__store-count">23</p>
+      <p class="hero__store-type">food trucks</p>
+    </div>
 
-			<div class="hero__major-box">
-				<picture>
-					
-					<source
-						srcset="./images/header-hero/icecream-mobile.png 157w, ./images/header-hero/icecream-mobile2x.png 314w"
+    <div class="hero__major-box">
+      <picture>
+        <source srcset="  
+            ./images/header-hero/icecream-mobile.png   157w,
+            ./images/header-hero/icecream-mobile2x.png 314w
+          " media="(max-width: 767px)" sizes="157px" type="image/png" />
 
-						media="(max-width: 767px)"
-						sizes="157px"
-						type="image/png"
-					>
-       
-					
-					<source
-						srcset="./images/header-hero/icecream-desktop.png 447w, ./images/header-hero/icecream-desktop2x.png 894w"
-						media="(min-width: 1200px)"
-						sizes="447px"
-						type="image/png"
-					>
-      
-					
-					<source
-						srcset="./images/header-hero/icecream-tablet.png 270w, ./images/header-hero/icecream-tablet2x.png 540w"
-						media="(min-width: 768px)"
-						sizes="270px"
-						type="image/png"
-					>
-    
+        <source srcset="
+            ./images/header-hero/icecream-desktop.png   447w,
+            ./images/header-hero/icecream-desktop2x.png 894w
+          " media="(min-width: 1200px)" sizes="447px" type="image/png" />
 
-					
-					<img src="./images/header-hero/icecream-mobile.png" alt="ice-cream">
-				</picture>
+        <source srcset="
+            ./images/header-hero/icecream-tablet.png   270w,
+            ./images/header-hero/icecream-tablet2x.png 540w
+          " media="(min-width: 768px)" sizes="270px" type="image/png" />
 
-				<svg class="hero__smile hero__smile--orange">
-					<use href="./images/icons/icons.svg#orange"></use>
-				</svg>
+        <img src="./images/header-hero/icecream-mobile.png" alt="ice-cream" />
+      </picture>
 
-				<svg class="hero__smile hero__smile--green">
-					<use href="./images/icons/icons.svg#green"></use>
-				</svg>
+      <svg class="hero__smile hero__smile--orange">
+        <use href="./images/icons/icons.svg#orange"></use>
+      </svg>
 
-				<svg class="hero__smile hero__smile--pink">
-					<use href="./images/icons/icons.svg#pink"></use>
-				</svg>
-			</div>
-		</div>
-	</section>
-</body>
-</html>
+      <svg class="hero__smile hero__smile--green">
+        <use href="./images/icons/icons.svg#green"></use>
+      </svg>
+
+      <svg class="hero__smile hero__smile--pink">
+        <use href="./images/icons/icons.svg#pink"></use>
+      </svg>
+    </div>
+  </div>
+</section>
