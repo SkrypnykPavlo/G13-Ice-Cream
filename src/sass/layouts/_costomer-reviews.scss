@@ -24,35 +24,6 @@
   background-color: $brand-main-color;
 }
 
-.gallery {
-  margin-bottom: 80px;
-
-  // Tablet screen
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 60px;
-  }
-
-  // Desktop screen
-  @media screen and (min-width: $desctop) {
-    margin-bottom: 127px;
-  }
-
-  &__main-image {
-    margin: 0 auto;
-    border-radius: 10px;
-
-    // Tablet screen
-    @media screen and (min-width: $tablet) {
-      border-radius: 18px;
-    }
-
-    // Desktop screen
-    @media screen and (min-width: $desctop) {
-      border-radius: 25px;
-    }
-  }
-}
-
 .review {
   padding-bottom: 394px;
 
