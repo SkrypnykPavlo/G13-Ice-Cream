@@ -125,6 +125,8 @@
   position: absolute;
 
   &--orange {
+    animation-delay: 1000ms;
+
     width: 68.95px;
     height: 62.4px;
 
@@ -146,6 +148,7 @@
   }
 
   &--green {
+    animation-delay: 1200ms;
     height: 76.18px;
     width: 77.57px;
 
@@ -168,6 +171,7 @@
   }
 
   &--pink {
+    animation-delay: 1500ms;
     width: 77.55px;
     height: 76.22px;
 
@@ -303,6 +307,8 @@
 
   //   fill: $text-light-color;
   // }
+  .hero__store {
+  }
 
   .hero__arrow-link {
     position: relative;
@@ -465,7 +471,7 @@
 .hero__shadow {
   animation-name: scale;
   animation-duration: 3000ms;
-  // animation-delay: 5000ms;
+  // animation-delay: 1000ms;
   // animation-fill-mode: forwards;
 
   @keyframes scale {
