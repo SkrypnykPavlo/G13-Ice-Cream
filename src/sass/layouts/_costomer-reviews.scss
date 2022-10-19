@@ -24,10 +24,6 @@
   background-color: $brand-main-color;
 }
 
-img {
-  width: 100%;
-}
-
 .gallery {
   margin-bottom: 80px;
 
@@ -40,57 +36,101 @@ img {
   @media screen and (min-width: $desctop) {
     margin-bottom: 127px;
   }
+
+  &__main-image {
+    border-radius: 10px;
+
+    // Tablet screen
+    @media screen and (min-width: $tablet) {
+      border-radius: 18px;
+    }
+
+    // Desktop screen
+    @media screen and (min-width: $desctop) {
+      border-radius: 25px;
+    }
+  }
 }
 
 .review {
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
   padding-bottom: 394px;
 
   // Tablet screen
   @media screen and (min-width: $tablet) {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     padding-bottom: 383px;
   }
 
   // Desktop screen
   @media screen and (min-width: $desctop) {
     padding-bottom: 204px;
-    margin-bottom: 127px;
+    // margin-bottom: 127px;
   }
 
   // Mobile screen
   @media screen and (max-width: 767px) {
     background-size: cover;
-    background-image: url(../images/customer-revievs/background-mobile.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(132, 161, 120, 1) 24px,
+        rgba(132, 161, 120, 0) 24px
+      ),
+      url(../images/customer-revievs/background-mobile.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customer-revievs/background-mobile@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(132, 161, 120, 1) 24px,
+          rgba(132, 161, 120, 0) 24px
+        ),
+        url(../images/customer-revievs/background-mobile@2x.jpg);
     }
   }
 
   // Tablet screen
   @media screen and (min-width: 768px) {
     background-size: cover;
-    background-image: url(../images/customer-revievs/background-tablet.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(132, 161, 120, 1) 163px,
+        rgba(132, 161, 120, 0) 163px
+      ),
+      url(../images/customer-revievs/background-tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customer-revievs/background-tablet@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(132, 161, 120, 1) 163px,
+          rgba(132, 161, 120, 0) 163px
+        ),
+        url(../images/customer-revievs/background-tablet@2x.jpg);
     }
   }
 
   // Desktop screen
   @media screen and (min-width: 1200px) {
     background-size: cover;
-    background-image: url(../images/customer-revievs/background-desktop.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(132, 161, 120, 1) 97px,
+        rgba(132, 161, 120, 0) 97px
+      ),
+      url(../images/customer-revievs/background-desktop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customer-revievs/background-desktop@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(132, 161, 120, 1) 97px,
+          rgba(132, 161, 120, 0) 97px
+        ),
+        url(../images/customer-revievs/background-desktop@2x.jpg);
     }
   }
 
