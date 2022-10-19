@@ -58,7 +58,7 @@
 }
 
 .hero__link {
-  outline: none;
+  outline: transparent;
 }
 
 .hero__link--bordered {
@@ -324,6 +324,9 @@
       .hero__Arrow-focus {
         opacity: 1;
       }
+      .hero__Arrow-hover {
+        opacity: 0;
+      }
     }
   }
   .hero__arrow-default {
@@ -336,6 +339,7 @@
   .hero__Arrow-focus {
     position: absolute;
     opacity: 0;
+    // transition: opacity $transition;
   }
 
   .hero__text {
@@ -459,6 +463,22 @@
 // }
 
 .hero__shadow {
+  animation-name: scale;
+  animation-duration: 3000ms;
+  // animation-delay: 5000ms;
+  // animation-fill-mode: forwards;
+
+  @keyframes scale {
+    0% {
+      transform: scalex(40%);
+
+      // transform: translateY(100%);
+    }
+    100% {
+      transform: scaley(100%);
+    }
+  }
+
   z-index: -1;
   position: absolute;
   // outline: 1px solid black;
@@ -500,7 +520,7 @@
     }
     width: 700px;
     height: 680px;
-    left: -22%;
+    left: -28%;
   }
 
   // @media screen and(min-width: 1200px) {
