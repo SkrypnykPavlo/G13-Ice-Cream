@@ -115,6 +115,7 @@
 // === large-ice-cream-container === //
 
 .hero__major-box {
+  z-index: 10001;
   position: absolute;
   bottom: 0px;
   left: 27%;
@@ -332,6 +333,7 @@
   }
 
   .hero__major-box {
+    z-index: 10001;
     left: 53%;
   }
 }
@@ -409,4 +411,16 @@
   .hero__store-type {
     @include font-line(14px, 17px);
   }
+}
+.hero__shadow {
+  position: absolute;
+  z-index: 1000;
+  outline: 1px solid black;
+  width: 700px;
+  height: 650px;
+  background-image: url(../images/header-hero/Rectangle23.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 46%;
 }
