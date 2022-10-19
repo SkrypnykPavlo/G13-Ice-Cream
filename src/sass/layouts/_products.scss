@@ -1,6 +1,8 @@
 .product {
   // background-image for phone
   @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-image: url(../images/products/mobile-fone.jpg);
     background-size: cover;
 
@@ -12,6 +14,8 @@
   }
   // background-image for tablet
   @media screen and (min-width: 768px) {
+    padding-bottom: 82px;
+    padding-top: 61px;
     background-image: url(../images/products/tablet-fone.jpg);
     background-size: cover;
 
@@ -23,6 +27,8 @@
   }
   // background-image for desktop
   @media screen and (min-width: 1200px) {
+    padding-bottom: 66px;
+    padding-top: 60px;  
     background-image: url(../images/products/desktop-fone.jpg);
     background-size: cover;
 
@@ -34,7 +40,8 @@
   }
 }
 
-.product__anchor {
+
+.product__desc {
   font-family: 'Montserrat';
   font-weight: 800;
   margin-bottom: 12px;
@@ -155,7 +162,7 @@
 
   @media screen and (max-width: 767px) {
     max-width: 450px;
-    height: 420px;
+    min-height: 420px;
     padding-top: 123px;
     padding-right: 40px;
     padding-left: 40px;
@@ -166,7 +173,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 428px;
+    min-height: 428px;
     max-width: 224px;
     padding-top: 107px;
     padding-right: 26px;
@@ -176,7 +183,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 535px;
+    min-height: 535px;
     max-width: 370px;
     padding-top: 165px;
     padding-right: 63px;
