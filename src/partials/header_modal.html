@@ -35,12 +35,16 @@
     </ul>
             <div class="register-form-group__buy" role="group">
                 <label class="label__buy">
-                <input class="register-form-input__buy" type="text" name="username" placeholder="Name" 
-                    pattern="^[a-zA-Z\s]+$" minlength="3">
+                <input class="register-form-input__buy"
+                 type="text" name="username" 
+                 placeholder="Name" 
+                 required pattern="^[a-zA-Z\s]+$" minlength="3">
                 </label>
                 <label class="label__buy">
-                <input class="register-form-input__buy" type="tel" 
-                name="username" placeholder="Phone"  pattern="^[0-9]+$" 
+                <input class="register-form-input__buy" 
+                type="tel" 
+                name="username" placeholder="Phone"  
+                required pattern="^[0-9]+$" 
     maxlength="13">
                 </label>
             <textarea class="register-form-message__buy" name="comment" rows="3" placeholder="Comment"></textarea>
