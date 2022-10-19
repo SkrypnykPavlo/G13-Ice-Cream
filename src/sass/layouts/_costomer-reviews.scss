@@ -38,6 +38,7 @@
   }
 
   &__main-image {
+    margin: 0 auto;
     border-radius: 10px;
 
     // Tablet screen
@@ -53,19 +54,16 @@
 }
 
 .review {
-  // margin-bottom: 80px;
   padding-bottom: 394px;
 
   // Tablet screen
   @media screen and (min-width: $tablet) {
-    // margin-bottom: 60px;
     padding-bottom: 383px;
   }
 
   // Desktop screen
   @media screen and (min-width: $desctop) {
     padding-bottom: 204px;
-    // margin-bottom: 127px;
   }
 
   // Mobile screen
@@ -135,15 +133,14 @@
   }
 
   &__box {
-    width: 280px;
     margin: 0 auto;
 
     @media screen and (min-width: $tablet) {
-      width: 705px;
+      max-width: 705px;
     }
 
     @media screen and (min-width: $desctop) {
-      width: 968px;
+      max-width: 968px;
     }
   }
 
