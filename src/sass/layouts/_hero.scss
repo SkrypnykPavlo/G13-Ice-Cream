@@ -27,7 +27,7 @@
   color: $text-light-color;
 
   height: 452px;
-  overflow-y: hidden;
+  // overflow-y: hidden;
 }
 
 .hero__header {
@@ -115,7 +115,7 @@
 // === large-ice-cream-container === //
 
 .hero__major-box {
-  // z-index: 1001;
+  z-index: 1;
   position: absolute;
   bottom: 0px;
   left: 27%;
@@ -333,7 +333,7 @@
   }
 
   .hero__major-box {
-    // z-index: 1001;
+    z-index: 1;
     left: 53%;
   }
 }
@@ -412,14 +412,65 @@
     @include font-line(14px, 17px);
   }
 }
+// .hero__shadow {
+//   position: absolute;
+//   outline: 1px solid black;
+//   width: 700px;
+//   height: 650px;
+//   // background-image: url(../images/header-hero/Ice-scream-shadow-desktop.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   bottom: 0;
+//   left: 45%;
+// }
+
 .hero__shadow {
+  z-index: -1;
   position: absolute;
-  outline: 1px solid black;
-  width: 700px;
-  height: 650px;
-  background-image: url(../images/header-hero/Ice-scream-shadow-desktop.png);
+  // outline: 1px solid black;
+  width: 260px;
+  height: 280px;
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 0;
-  left: 45%;
+  left: -20%;
+  background-image: url(../images/header-hero/Ice-scream-shadow-mobile.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header-hero/Ice-scream-shadow-mobile2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/header-hero/Ice-scream-shadow-tablet.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: l
+        url(../images/header-hero/Ice-scream-shadow-tablet2x.png);
+    }
+    width: 380px;
+    height: 380px;
+    left: -20%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/header-hero/Ice-scream-shadow-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header-hero/Ice-scream-shadow-desktop2x.png);
+    }
+    width: 700px;
+    height: 680px;
+    left: -22%;
+  }
+
+  // @media screen and(min-width: 1200px) {
+  //   height: 600px;
+  //   padding: 200px 0;
+  // }
 }
