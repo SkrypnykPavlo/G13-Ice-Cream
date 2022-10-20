@@ -1,13 +1,12 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: "horizontal",
+  direction: 'horizontal',
   loop: true,
-
+  spaceBetween: 40,
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
+    type: 'bullets',
     clicable: true,
   },
-
-  spaceBetween: 40,
 });
