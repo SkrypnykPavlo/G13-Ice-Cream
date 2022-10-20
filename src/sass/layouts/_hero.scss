@@ -30,7 +30,8 @@
   // overflow-y: hidden;
 }
 
-.hero__header {
+.hero__title {
+  animation-delay: 800ms;
   margin-bottom: 32px;
 
   font-family: 'Seymour One';
@@ -115,6 +116,7 @@
 // === large-ice-cream-container === //
 
 .hero__major-box {
+  // animation-delay: 1000ms;
   z-index: 1;
   position: absolute;
   bottom: 0px;
@@ -220,7 +222,7 @@
     display: none;
   }
 
-  .hero__header {
+  .hero__title {
     max-width: 247px;
   }
 }
@@ -250,7 +252,7 @@
     }
   }
 
-  .hero__header {
+  .hero__title {
     margin-bottom: 20px;
 
     width: 181px;
@@ -401,7 +403,7 @@
     }
   }
 
-  .hero__header {
+  .hero__title {
     margin-bottom: 28px;
 
     width: 367px;
