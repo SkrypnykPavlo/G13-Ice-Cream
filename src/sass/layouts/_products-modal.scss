@@ -17,6 +17,24 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 226, 178, 0.7);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $brand-main-color;
+}
+
 .products-modal__title {
   margin-bottom: 22px;
 
@@ -226,6 +244,8 @@
 }
 
 .modal-form__input {
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-left: 11px;
   padding-right: 11px;
 
@@ -234,11 +254,14 @@
 
   outline: transparent;
 
+  background: rgba(248, 210, 78, 0.1);
   border: 1px solid $brand-main-color;
   border-radius: 10px;
 
   @media screen and (min-width: $tablet) {
     width: 368px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
@@ -255,8 +278,8 @@
 .modal-form__comment {
   resize: none;
 
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 11px;
+  padding-right: 11px;
   padding-top: 11px;
   padding-bottom: 11px;
 
@@ -267,11 +290,14 @@
   color: $text-dark-color;
 
   outline: transparent;
+  background: rgba(248, 210, 78, 0.1);
   border: 1px solid $brand-main-color;
   border-radius: 10px;
 
   @media screen and (min-width: $tablet) {
     width: 368px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
