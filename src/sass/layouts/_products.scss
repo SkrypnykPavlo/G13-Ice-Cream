@@ -417,22 +417,54 @@
 }
 
 .product__button {
-  border: none;
-  background: url(../images/products/arrow1.png);
-  background-size: cover;
-  width: 40px;
-  height: 15px;
   padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 60px;
+  height: 30px;
   cursor: pointer;
+  position: relative;
 
   &:hover {
-    background: url(../images/products/arrow2.png);
-    width: 51px;
+    .product__arrow-default {
+  opacity: 0;
+    }
+.product__arrow-hover {
+  opacity: 1;
+}
   }
 
   &:focus {
-    background: url(../images/products/arrow3.png);
-    width: 51px;
-    height: 24px;
+    .product__arrow-default {
+  opacity: 0;
+    }
+    .product__arrow-focus {
+      opacity: 1;
+    }
   }
+
 }
+
+.product__arrow-default {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.product__arrow-hover {
+  position: absolute;
+    bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+}
+
+.product__arrow-focus {
+  position: absolute;
+    bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+}
+
