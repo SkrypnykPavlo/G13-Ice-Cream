@@ -3,6 +3,8 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 40,
+  uniqueNavElements: true,
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
