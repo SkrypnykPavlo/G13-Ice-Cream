@@ -27,10 +27,11 @@
   color: $text-light-color;
 
   height: 452px;
-  overflow-y: hidden;
+  // overflow-y: hidden;
 }
 
-.hero__header {
+.hero__title {
+  animation-delay: 800ms;
   margin-bottom: 32px;
 
   font-family: 'Seymour One';
@@ -58,7 +59,7 @@
 }
 
 .hero__link {
-  outline: none;
+  outline: transparent;
 }
 
 .hero__link--bordered {
@@ -115,6 +116,8 @@
 // === large-ice-cream-container === //
 
 .hero__major-box {
+  // animation-delay: 1000ms;
+  z-index: 1;
   position: absolute;
   bottom: 0px;
   left: 27%;
@@ -124,6 +127,8 @@
   position: absolute;
 
   &--orange {
+    animation-delay: 1000ms;
+
     width: 68.95px;
     height: 62.4px;
 
@@ -145,6 +150,7 @@
   }
 
   &--green {
+    animation-delay: 1200ms;
     height: 76.18px;
     width: 77.57px;
 
@@ -167,6 +173,7 @@
   }
 
   &--pink {
+    animation-delay: 1500ms;
     width: 77.55px;
     height: 76.22px;
 
@@ -215,7 +222,7 @@
     display: none;
   }
 
-  .hero__header {
+  .hero__title {
     max-width: 247px;
   }
 }
@@ -245,7 +252,7 @@
     }
   }
 
-  .hero__header {
+  .hero__title {
     margin-bottom: 20px;
 
     width: 181px;
@@ -273,34 +280,74 @@
     margin-right: 33px;
   }
 
-  .hero__arrow-link {
-    display: block;
-    width: 40px;
-    height: 14px;
+  // .hero__arrow-link {
+  //   // display: block;
+  //   width: 40px;
+  //   height: 14px;
 
-    &:hover,
-    &:focus {
-      width: 50px;
-      height: 22px;
-      .hero__arrow-icon {
-        width: 50px;
-        stroke-width: 3px;
-        stroke: $text-light-color;
+  //   &:hover,
+  //   &:focus {
+  //     width: 50px;
+  //     height: 22px;
+  //     .hero__arrow-icon {
+  //       width: 50px;
+  //       stroke-width: 3px;
+  //       stroke: $text-light-color;
+  //     }
+  //   }
+  //   &:focus {
+  //     .hero__arrow-icon {
+  //       stroke-width: 3px;
+  //       stroke: $text-light-color;
+  //     }
+  //   }
+  // }
+
+  // .hero__arrow-icon {
+  //   width: 100px;
+  //   height: 15px;
+
+  //   fill: $text-light-color;
+  // }
+  .hero__store {
+  }
+
+  .hero__arrow-link {
+    position: relative;
+    width: 50px;
+    height: 25px;
+
+    &:hover {
+      .hero__arrow-default {
+        opacity: 0;
+      }
+      .hero__Arrow-hover {
+        opacity: 1;
       }
     }
     &:focus {
-      .hero__arrow-icon {
-        stroke-width: 3px;
-        stroke: $text-light-color;
+      .hero__arrow-default {
+        opacity: 0;
+      }
+      .hero__Arrow-focus {
+        opacity: 1;
+      }
+      .hero__Arrow-hover {
+        opacity: 0;
       }
     }
   }
-
-  .hero__arrow-icon {
-    width: 100px;
-    height: 15px;
-
-    fill: $text-light-color;
+  .hero__arrow-default {
+    position: absolute;
+  }
+  .hero__Arrow-hover {
+    position: absolute;
+    opacity: 0;
+  }
+  .hero__Arrow-focus {
+    position: absolute;
+    opacity: 0;
+    // transition: opacity $transition;
   }
 
   .hero__text {
@@ -332,6 +379,7 @@
   }
 
   .hero__major-box {
+    z-index: 1;
     left: 53%;
   }
 }
@@ -355,7 +403,7 @@
     }
   }
 
-  .hero__header {
+  .hero__title {
     margin-bottom: 28px;
 
     width: 367px;
@@ -409,4 +457,82 @@
   .hero__store-type {
     @include font-line(14px, 17px);
   }
+}
+// .hero__shadow {
+//   position: absolute;
+//   outline: 1px solid black;
+//   width: 700px;
+//   height: 650px;
+//   // background-image: url(../images/header-hero/Ice-scream-shadow-desktop.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   bottom: 0;
+//   left: 45%;
+// }
+
+.hero__shadow {
+  animation-name: scale;
+  animation-duration: 3000ms;
+  // animation-delay: 1000ms;
+  // animation-fill-mode: forwards;
+
+  @keyframes scale {
+    0% {
+      transform: scalex(40%);
+
+      // transform: translateY(100%);
+    }
+    100% {
+      transform: scaley(100%);
+    }
+  }
+
+  z-index: -1;
+  position: absolute;
+  // outline: 1px solid black;
+  width: 260px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: -20%;
+  background-image: url(../images/header-hero/Ice-scream-shadow-mobile.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header-hero/Ice-scream-shadow-mobile2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/header-hero/Ice-scream-shadow-tablet.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: l
+        url(../images/header-hero/Ice-scream-shadow-tablet2x.png);
+    }
+    width: 380px;
+    height: 380px;
+    left: -20%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/header-hero/Ice-scream-shadow-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header-hero/Ice-scream-shadow-desktop2x.png);
+    }
+    width: 700px;
+    height: 680px;
+    left: -28%;
+  }
+
+  // @media screen and(min-width: 1200px) {
+  //   height: 600px;
+  //   padding: 200px 0;
+  // }
 }

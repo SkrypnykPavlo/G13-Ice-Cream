@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header-container {
   background-color: $brand-main-color;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 18px;
+  padding-top: 15px;
 }
 
 .header {
@@ -20,6 +24,8 @@
 }
 
 .header__nav {
+  // Настя, привет! Я добавил этот z-index, что бы перебить тень на мороженом; Костя
+  z-index: 2;
   &__list {
     display: none;
 
@@ -36,8 +42,6 @@
 
   &__link {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
 
     font-family: $font-main;
     font-weight: 700;
@@ -122,6 +126,7 @@
 
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     top: 32px;
@@ -178,4 +183,30 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.scroll-top {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 99;
+  border-radius: 50%;
+
+  background-color: transparent;
+  border: none;
+  fill: $card-second-color;
+  cursor: pointer;
+
+  transition: scale($transition), fill($transition);
+}
+
+.scroll-top:hover {
+  scale: 0.9;
+  fill: $brand-second-color;
+}
+
+.scroll-top:focus,
+.scroll-top:active {
+  scale: 1.25;
+  fill: $focus-color;
 }

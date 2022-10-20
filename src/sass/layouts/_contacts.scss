@@ -24,6 +24,7 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 60px;
@@ -37,8 +38,6 @@
 
 .contacts__item {
   max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
 
   background-color: $text-light-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -73,6 +72,12 @@
     min-height: 538px;
     width: calc((100% - 32px * 2) / 3);
     padding: 40px;
+  }
+
+  transition: background-color 500ms linear, transform 500ms ease-in-out 500ms;
+
+  &:hover {
+    background-color: $card-first-color;
   }
 }
 
@@ -182,7 +187,7 @@
   color: $text-address-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:hover,
   &:focus {
     text-decoration: underline;

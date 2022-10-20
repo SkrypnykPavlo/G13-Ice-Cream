@@ -75,27 +75,15 @@
     font-size: 12px;
     line-height: calc(15 / 12);
   }
+  &:hover {
+    background-color: #edc330;
+    border-color: #edc330;
+    color: #fcfcfc;
+  }
 }
 
 .btn--arrow {
   width: 196px;
-
-  // Перед здачей удалю
-
-  // &::after {
-  //   content: '';
-  //   display: inline-flex;
-
-  //   background-image: url(../images/icons/black-arrow.svg);
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-
-  //   width: 12px;
-  //   height: 12px;
-  // }
-  // &:focus::after {
-  //   background-image: url(../images/icons/white-arrow.svg);
-  // }
 }
 
 .btn-Read-more {
@@ -113,6 +101,8 @@
 
 .btn-Buy-now {
   display: none;
+  // Настя, привет! Я добавил этот z-index, что бы перебить тень на мороженом; Костя
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     display: flex;
