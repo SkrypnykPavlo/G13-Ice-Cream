@@ -24,7 +24,6 @@ html {
 }
 
 .header__nav {
-  // Настя, привет! Я добавил этот z-index, что бы перебить тень на мороженом; Костя
   z-index: 2;
   &__list {
     display: none;
@@ -59,6 +58,7 @@ html {
 }
 
 .menu-btn {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@ html {
 
   padding: 0;
   margin-left: auto;
-  margin-right: 20px;
+  // margin-right: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;

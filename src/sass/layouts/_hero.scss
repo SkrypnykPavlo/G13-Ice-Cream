@@ -1,17 +1,3 @@
-// === hero-mixins === //
-@mixin font($fs: 16px, $fw: 400, $lh: 28px) {
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: calc($lh / $fs);
-}
-
-@mixin padding-button($pt: 12px, $pb: 12px, $pl: 33px, $pr: 33px) {
-  padding-top: $pt;
-  padding-bottom: $pb;
-  padding-left: $pl;
-  padding-right: $pr;
-}
-
 @mixin font-line($size, $height) {
   font-size: $size;
   line-height: calc($height/$size);
@@ -120,6 +106,7 @@
 }
 
 .hero__list-item--unbordered {
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
