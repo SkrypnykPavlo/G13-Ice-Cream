@@ -1,28 +1,26 @@
-.swiper {
-  padding-bottom: 51px;
-  width: 100%;
-  height: 100%;
-  align-content: center;
+.slick-slider {
+  position: static;
 }
 
-.swiper-slide {
-  width: 100%;
-  height: 100%;
+.slick-dots {
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 18px;
 }
 
-.swiper-pagination-bullet {
+.slick-dots button {
+  font-size: 0;
   width: 12px;
   height: 12px;
-  background-color: $back-round-decoration;
-  gap: 18px;
-  opacity: 1;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background-color: #d9d9d9;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: $brand-main-color;
+.slick-active button {
+  background-color: #84a178;
 }
 
 .review {
@@ -104,7 +102,7 @@
     }
   }
 
-  &__box {
+  &__slide {
     margin: 0 auto;
 
     @media screen and (min-width: $tablet) {
@@ -159,6 +157,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
+    text-align: center;
 
     color: $text-dark-color;
 
