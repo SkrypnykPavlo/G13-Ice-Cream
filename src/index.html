@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ice cream</title>
+
   <!-- Шрифти -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +20,7 @@
   <link rel="icon" href="./images/icons/favicon(4).ico" type="image/x-icon" />
 
   <!-- Стилі свайпера -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <!-- Стилі -->
   <link rel="stylesheet" href="./sass/index.scss" />
 
@@ -67,6 +66,20 @@
   <include src="./partials/footer.html"></include>
   <include src="./partials/location_modal.html"></include>
   <include src="./partials/franchise_modal.html"></include>
+
+  <!-- JS свайпера -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
 
 
 </body>
