@@ -22,12 +22,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 1px grey;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(192, 226, 178, 0.7);
+  background: transparent;
   border-radius: 10px;
 }
 
