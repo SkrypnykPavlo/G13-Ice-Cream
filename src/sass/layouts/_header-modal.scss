@@ -7,7 +7,6 @@
     border-radius: 10px;
     max-height: 100%;
     overflow-y: auto;
-    z-index: 1100;
    
     @media screen and (min-width:768px) {
         width: 568px;
@@ -207,8 +206,16 @@ border: 2px solid $card-third-color;
     cursor: pointer;
 }
 
-input:checked+label {
+input:checked+label.elipse_green {
+    background: $card-first-color;
+}
+
+input:checked+label.elipse_yelow {
     background: $brand-second-color;
+}
+
+input:checked+label.elipse_mocco {
+    background: $text-address-color;
 }
 
 .modal-name__buy {
