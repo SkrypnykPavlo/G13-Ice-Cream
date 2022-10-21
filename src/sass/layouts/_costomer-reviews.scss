@@ -19,6 +19,10 @@
   background-color: $back-round-decoration;
   gap: 18px;
   opacity: 1;
+  &:hover {
+    transform: scale(1.25);
+    background-color: $brand-main-color;
+  }
 }
 
 .swiper-pagination-bullet-active {
