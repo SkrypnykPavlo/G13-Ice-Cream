@@ -66,8 +66,12 @@
 }
 .hero__title-span {
   @include font-line(34px, 33px);
+
   @media screen and (min-width: 768px) {
     @include font-line(24px, 13px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-line(38px, 47.76px);
   }
 }
 // ===================================================
