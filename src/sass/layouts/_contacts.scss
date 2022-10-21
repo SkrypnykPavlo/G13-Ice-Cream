@@ -74,7 +74,8 @@
 
   @media screen and (min-width: $desctop) {
     min-height: 538px;
-    width: calc((100% - 32px * 2) / 3);
+
+    max-width: calc((100% - 32px * 2) / 3);
     padding: 40px;
   }
 
