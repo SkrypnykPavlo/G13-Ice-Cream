@@ -163,6 +163,10 @@
   scale: 1.25;
 }
 
+.socials__link:focus .socials__icon {
+  scale: 1.25;
+}
+
 .footer__contact {
   font-family: $font-main;
   font-weight: 700;

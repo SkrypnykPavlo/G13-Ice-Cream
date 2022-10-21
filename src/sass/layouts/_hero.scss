@@ -42,7 +42,39 @@
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    max-width: 247px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    width: 181px;
+    height: 74px;
+
+    @include font-line(18px, 23px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 28px;
+
+    width: 367px;
+    height: 144px;
+
+    @include font-line(38px, 47.76px);
+  }
 }
+.hero__title-span {
+  @include font-line(34px, 33px);
+
+  @media screen and (min-width: 768px) {
+    @include font-line(24px, 13px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-line(38px, 47.76px);
+  }
+}
+// ===================================================
 
 .hero__list {
   display: flex;
@@ -85,10 +117,6 @@
   &:disabled {
     border-color: $disabled-color;
   }
-}
-
-.hero__btn-arrow {
-  fill: white;
 }
 
 .hero__list-item--unbordered {
@@ -221,10 +249,6 @@
   .hero__minor-box {
     display: none;
   }
-
-  .hero__title {
-    max-width: 247px;
-  }
 }
 
 // hero-tb //
@@ -250,15 +274,6 @@
     .hero {
       background-image: url(../images/header-hero/dottes-tablet2x.png);
     }
-  }
-
-  .hero__title {
-    margin-bottom: 20px;
-
-    width: 181px;
-    height: 74px;
-
-    @include font-line(18px, 23px);
   }
 
   .hero__list {
@@ -316,6 +331,7 @@
     position: relative;
     width: 50px;
     height: 25px;
+    fill: $text-light-color;
 
     &:hover {
       .hero__arrow-default {
@@ -401,15 +417,6 @@
     .hero {
       background-image: url(../images/header-hero/dottes-desktop2x.png);
     }
-  }
-
-  .hero__title {
-    margin-bottom: 28px;
-
-    width: 367px;
-    height: 144px;
-
-    @include font-line(38px, 47.76px);
   }
 
   .hero__list {
