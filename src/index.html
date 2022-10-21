@@ -1,80 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ice cream</title>
-    <!-- Шрифти -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
+<html lang="en">
 
-    <!-- Анімації -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ice cream</title>
+  <!-- Шрифти -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+    rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./images/icons/favicon(4).ico" type="image/x-icon" />
+  <!-- Анімації -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Стилі свайпера -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" href="./images/icons/favicon(4).ico" type="image/x-icon" />
 
-    <!-- Стилі -->
-    <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- Стилі свайпера -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- JS -->
-    <script type="module" src="./index.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // Get the button:
-let mybutton = document.getElementById("myBtn");
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  <!-- Стилі -->
+  <link rel="stylesheet" href="./sass/index.scss" />
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  <!-- JS -->
+  <script type="module" src="./index.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
-    } else {
+      } else {
         document.getElementById("myBtn").style.display = "none";
+      }
     }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-    </script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/header_modal.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/products_modal.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/about_modal.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <!-- <include src="./partials/gallery.html"></include> -->
-    <include src="./partials/customer_reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/location_modal.html"></include>
-    <include src="./partials/franchise_modal.html"></include>
-  </body>
+<body>
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html"></include>
+  <include src="./partials/header_modal.html"></include>
+  <include src="./partials/products.html"></include>
+  <include src="./partials/products_modal.html"></include>
+  <include src="./partials/about.html"></include>
+  <include src="./partials/about_modal.html"></include>
+  <include src="./partials/advantages.html"></include>
+  <!-- <include src="./partials/gallery.html"></include> -->
+  <include src="./partials/customer_reviews.html"></include>
+  <include src="./partials/contacts.html"></include>
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/location_modal.html"></include>
+  <include src="./partials/franchise_modal.html"></include>
+</body>
+
 </html>
