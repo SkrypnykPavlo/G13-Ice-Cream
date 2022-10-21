@@ -9,7 +9,7 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
+  z-index: 1100;
   transition: 0.3s all;
 }
 
@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
+  z-index: 1130;
 
   opacity: 0;
   visibility: hidden;
