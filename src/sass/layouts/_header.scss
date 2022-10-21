@@ -58,7 +58,13 @@ html {
   }
 }
 
+// .header__logo__img {
+//   height: 40px;
+//   width: 37px;
+// }
+
 .menu-btn {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +74,7 @@ html {
 
   padding: 0;
   margin-left: auto;
-  margin-right: 20px;
+  // margin-right: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;

@@ -3,92 +3,50 @@
     <nav class="header__nav">
       <picture>
         <!-- Desktop -->
-        <source
-          media="(min-width: 1200px)"
-          srcset="
+        <source media="(min-width: 1200px)" srcset="
             ./images/logo/Logo-min.png    1x,
             ./images/logo/Logo-x2-min.png 2x
-          "
-        />
+          " />
         <!-- Tablet -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
+        <source media="(min-width: 768px)" srcset="
             ./images/logo/logo-tablet-min.png    1x,
             ./images/logo/logo-tablet-x2-min.png 2x
-          "
-        />
+          " />
         <!-- Mobile -->
-        <source
-          media="(min-width: 480px)"
-          srcset="
+        <source media="(min-width: 480px)" srcset="
             ./images/logo/Logo-mobile-min.png    1x,
             ./images/logo/Logo-mobile-x2-min.png 2x
-          "
-        />
-        <img
-          class="header__logo__img"
-          src="./images/logo/Logo-min.png"
-          alt="Ice Cream logo"
-        />
+          " />
+        <img class="header__logo__img" src="./images/logo/Logo-min.png" alt="Ice Cream logo" />
       </picture>
 
       <ul class="header__nav__list list">
         <li class="header__nav__item">
-          <a
-            class="header__nav__link header__nav__link--focused link"
-            href="#home"
-            target="_self"
-            rel="noopener noreferrer"
-            >Home</a
-          >
+          <a class="header__nav__link header__nav__link--focused link" href="#home" target="_self"
+            rel="noopener noreferrer">Home</a>
         </li>
         <li class="header__nav__item">
-          <a
-            class="header__nav__link header__nav__link--focused link"
-            href="#howmade"
-            target="_self"
-            rel="noopener noreferrer"
-            >How its made?</a
-          >
+          <a class="header__nav__link header__nav__link--focused link" href="#howmade" target="_self"
+            rel="noopener noreferrer">How its made?</a>
         </li>
         <li class="header__nav__item">
-          <a
-            class="header__nav__link header__nav__link--focused link"
-            href="#products"
-            target="_self"
-            rel="noopener noreferrer"
-            >Our products</a
-          >
+          <a class="header__nav__link header__nav__link--focused link" href="#products" target="_self"
+            rel="noopener noreferrer">Our products</a>
         </li>
         <li class="header__nav__item">
-          <a
-            class="header__nav__link header__nav__link--focused link"
-            href="#contacts"
-            target="_self"
-            rel="noopener noreferrer"
-            >Contact</a
-          >
+          <a class="header__nav__link header__nav__link--focused link" href="#contacts" target="_self"
+            rel="noopener noreferrer">Contact</a>
         </li>
       </ul>
     </nav>
 
-    <button
-      type="button"
-      class="menu-btn js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
+    <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="menu-btn__icon" width="32" height="32">
         <use href="./images/icons/icons.svg#burger-menu"></use>
       </svg>
     </button>
 
-    <button
-      type="button"
-      class="btn btn-Buy-now btn--use js-open-modal"
-      data-modal="1"
-    >
+    <button type="button" class="btn btn-Buy-now btn--use js-open-modal" data-modal="1">
       Buy now<svg width="12px" height="12px">
         <use href="./images/icons/icons.svg#arrow"></use>
       </svg>
@@ -99,26 +57,16 @@
   <div class="menu-container js-menu-container" id="mobile-menu">
     <picture>
       <!-- Tablet -->
-      <source
-        media="(min-width: 768px)"
-        srcset="
+      <source media="(min-width: 768px)" srcset="
           ./images/logo/logo-tablet-min.png    1x,
           ./images/logo/logo-tablet-x2-min.png 2x
-        "
-      />
+        " />
       <!-- Mobile -->
-      <source
-        media="(min-width: 480px)"
-        srcset="
+      <source media="(min-width: 480px)" srcset="
           ./images/logo/Logo-mobile-min.png    1x,
           ./images/logo/Logo-mobile-x2-min.png 2x
-        "
-      />
-      <img
-        class="mobile-menu__img"
-        src="./images/logo/Logo-min.png"
-        alt="Ice Cream logo"
-      />
+        " />
+      <img class="mobile-menu__img" src="./images/logo/Logo-min.png" alt="Ice Cream logo" />
     </picture>
 
     <button type="button" class="menu-toggle js-close-menu">
@@ -129,49 +77,21 @@
 
     <ul class="mobile-list list">
       <li class="mobile-list__item">
-        <a
-          href="#home"
-          class="mobile-list__link link"
-          target="_self"
-          rel="noopener noreferrer"
-          >Home</a
-        >
+        <a href="#home" class="mobile-list__link link" target="_self" rel="noopener noreferrer">Home</a>
       </li>
       <li class="mobile-list__item">
-        <a
-          href="#howmade"
-          class="mobile-list__link link"
-          target="_self"
-          rel="noopener noreferrer"
-          >How it’s made?</a
-        >
+        <a href="#howmade" class="mobile-list__link link" target="_self" rel="noopener noreferrer">How it’s made?</a>
       </li>
       <li class="mobile-list__item">
-        <a
-          href="#products"
-          class="mobile-list__link link"
-          target="_self"
-          rel="noopener noreferrer"
-          >Our products</a
-        >
+        <a href="#products" class="mobile-list__link link" target="_self" rel="noopener noreferrer">Our products</a>
       </li>
       <li class="mobile-list__item">
-        <a
-          href="#contacts"
-          class="mobile-list__link link"
-          target="_self"
-          rel="noopener noreferrer"
-          >Contact</a
-        >
+        <a href="#contacts" class="mobile-list__link link" target="_self" rel="noopener noreferrer">Contact</a>
       </li>
     </ul>
 
     <div class="mobile__btn">
-      <button
-        type="button"
-        class="btn btn-Buy-now btn--use mobile-menu__btn js-open-modal"
-        data-modal="1"
-      >
+      <button type="button" class="btn btn-Buy-now btn--use mobile-menu__btn js-open-modal" data-modal="1">
         Buy now<svg width="12px" height="12px">
           <use href="./images/icons/icons.svg#arrow"></use>
         </svg>
