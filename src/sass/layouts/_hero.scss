@@ -1,9 +1,11 @@
+// === Mixins === //
+
 @mixin font-line($size, $height) {
   font-size: $size;
   line-height: calc($height/$size);
 }
 
-// ========== //
+// === HERO section === //
 
 .hero {
   position: relative;
@@ -13,7 +15,6 @@
   color: $text-light-color;
 
   height: 452px;
-  // overflow-y: hidden;
 }
 
 .hero__title {
@@ -60,7 +61,6 @@
     @include font-line(38px, 47.76px);
   }
 }
-// ===================================================
 
 .hero__list {
   display: flex;
@@ -76,11 +76,8 @@
   text-align: center;
 }
 
-.hero__link {
-  outline: transparent;
-}
-
 .hero__link--bordered {
+  outline: transparent;
   display: inline-block;
   width: 100%;
 
@@ -131,7 +128,6 @@
 // === large-ice-cream-container === //
 
 .hero__major-box {
-  // animation-delay: 1000ms;
   z-index: 1;
   position: absolute;
   bottom: 0px;
@@ -144,43 +140,43 @@
   &--orange {
     animation-delay: 1000ms;
 
-    width: 68.95px;
-    height: 62.4px;
+    width: 69px;
+    height: 62px;
 
-    top: 47.11px;
-    left: 25.29px;
+    top: 47px;
+    left: 25px;
 
     @media screen and (min-width: 768px) {
-      width: 109.95px;
+      width: 101px;
       left: 35px;
       height: 106px;
-      top: 70.11px;
+      top: 70px;
     }
     @media screen and (min-width: 1200px) {
-      width: 175.95px;
-      top: 127.11px;
+      width: 176px;
+      top: 127px;
       height: 180px;
-      left: 78.29px;
+      left: 78px;
     }
   }
 
   &--green {
     animation-delay: 1200ms;
-    height: 76.18px;
-    width: 77.57px;
+    height: 76px;
+    width: 78px;
 
     top: 3px;
     right: 6px;
 
     @media screen and (min-width: 768px) {
-      width: 139.57px;
-      top: 1px;
-      height: 138.18px;
+      width: 140px;
+      top: -4px;
+      height: 138px;
       right: 11px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 219.95px;
+      width: 220px;
       height: 214px;
       right: 22px;
       top: 15px;
@@ -189,20 +185,20 @@
 
   &--pink {
     animation-delay: 1500ms;
-    width: 77.55px;
-    height: 76.22px;
+    width: 78px;
+    height: 76px;
 
     top: 75px;
     right: -4px;
 
     @media screen and (min-width: 768px) {
-      width: 138.55px;
-      height: 141.22px;
+      width: 139px;
+      height: 141px;
       top: 110px;
       right: -2px;
     }
     @media screen and (min-width: 1200px) {
-      width: 219.95px;
+      width: 220px;
       top: 209px;
       height: 214px;
       right: -2px;
@@ -210,7 +206,7 @@
   }
 }
 
-// === hero-mb-only === //
+// === hero-mobile-only === //
 
 @media screen and (max-width: 767px) {
   .hero {
@@ -218,16 +214,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-  }
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/header-hero/dottes-mobile2x.png);
-      background-size: contain;
-      background-repeat: no-repeat;
+
       background-position: right bottom;
     }
   }
@@ -238,7 +231,8 @@
   }
 }
 
-// hero-tb //
+// === hero-taletb === //
+
 @media screen and (min-width: 768px) {
   .hero {
     .container {
@@ -252,13 +246,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
-  }
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/header-hero/dottes-tablet2x.png);
     }
   }
@@ -280,38 +272,6 @@
 
   .hero__minor-picture {
     margin-right: 33px;
-  }
-
-  // .hero__arrow-link {
-  //   // display: block;
-  //   width: 40px;
-  //   height: 14px;
-
-  //   &:hover,
-  //   &:focus {
-  //     width: 50px;
-  //     height: 22px;
-  //     .hero__arrow-icon {
-  //       width: 50px;
-  //       stroke-width: 3px;
-  //       stroke: $text-light-color;
-  //     }
-  //   }
-  //   &:focus {
-  //     .hero__arrow-icon {
-  //       stroke-width: 3px;
-  //       stroke: $text-light-color;
-  //     }
-  //   }
-  // }
-
-  // .hero__arrow-icon {
-  //   width: 100px;
-  //   height: 15px;
-
-  //   fill: $text-light-color;
-  // }
-  .hero__store {
   }
 
   .hero__arrow-link {
@@ -350,7 +310,6 @@
   .hero__Arrow-focus {
     position: absolute;
     opacity: 0;
-    // transition: opacity $transition;
   }
 
   .hero__text {
@@ -387,7 +346,8 @@
   }
 }
 
-// === hero-dt === //
+// === hero-desktop === //
+
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url(../images/header-hero/dottes-desktop.png);
@@ -395,13 +355,11 @@
 
     background-size: 1200px;
     background-position: bottom center;
-  }
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/header-hero/dottes-desktop2x.png);
     }
   }
@@ -452,29 +410,14 @@
     @include font-line(14px, 17px);
   }
 }
-// .hero__shadow {
-//   position: absolute;
-//   outline: 1px solid black;
-//   width: 700px;
-//   height: 650px;
-//   // background-image: url(../images/header-hero/Ice-scream-shadow-desktop.png);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   bottom: 0;
-//   left: 45%;
-// }
 
 .hero__shadow {
   animation-name: scale;
   animation-duration: 3000ms;
-  // animation-delay: 1000ms;
-  // animation-fill-mode: forwards;
 
   @keyframes scale {
     0% {
       transform: scalex(40%);
-
-      // transform: translateY(100%);
     }
     100% {
       transform: scaley(100%);
@@ -483,7 +426,6 @@
 
   z-index: -1;
   position: absolute;
-  // outline: 1px solid black;
   width: 260px;
   height: 280px;
   background-repeat: no-repeat;
@@ -524,9 +466,4 @@
     height: 680px;
     left: -28%;
   }
-
-  // @media screen and(min-width: 1200px) {
-  //   height: 600px;
-  //   padding: 200px 0;
-  // }
 }
